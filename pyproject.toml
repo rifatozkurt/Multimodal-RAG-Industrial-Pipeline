@@ -1,0 +1,10 @@
+[project]
+name = "project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "scikit-learn>=1.7.2",
+    "tqdm>=4.67.1",
+]
