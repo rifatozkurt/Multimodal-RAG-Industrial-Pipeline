@@ -1,0 +1,8 @@
+The following is a question about an industrial device. Give only the letter choice in your answer.
+
+Question: In an SR latch built from NOR gates, which condition is not allowed
+A.S=0, R=0
+B.S=0, R=1
+C.S=1, R=0
+D.S=1, R=1
+Answer:

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "A6V12681514_p2_q0001",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For the SSE131.09U actuator using a 3-position control signal, what happens when voltage is applied to terminal Y1?\nA. The actuator stem extends; the normally open valve closes\nB. The actuator stem retracts; the normally open valve opens\nC. The actuator maintains its current position\nD. The actuator performs a self-calibration cycle\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:10:13Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0002",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: During self-calibration of the SSE161.05U or SSF161.05U actuator, which condition causes calibration failure?\nA. Valve stroke greater than 0.25 inch (6.5 mm)\nB. Valve stroke less than 0.05 inch (1.2 mm)\nC. Operating voltage higher than 24 V\nD. Y1 and Y2 signals applied simultaneously\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:10:29Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0003",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What is the operating voltage of the SSE161.05U actuator?\nA. AC 120 V\nB. AC/DC 24 V\nC. DC 48 V\nD. AC 12 V\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:11:07Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0004",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For the SSE131.09U actuator, what control type is used?\nA. PWM\nB. 3-position (floating)\nC. Binary ON/OFF\nD. Modbus RTU\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:11:21Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0005",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: At DC 0 V on an SSE161.05U actuator, what is the stem position for a normally closed valve?\nA. Fully open\nB. Oscillating\nC. Mid-stroke\nD. Fully closed\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:11:45Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0006",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What does a constant red LED (LED2) indicate on the actuator?\nA. Error\nB. Calibration\nC. Manual override active\nD. Stem fully extended\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:13:27Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0007",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: How many SSE161.05U actuators can be operated in parallel if the controller output is sufficient?\nA. 3\nB. 5\nC. 10\nD. 20\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:13:38Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0008",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: During self-calibration, what sequence does the actuator follow?\nA. Mid-stroke → fully extended → retracted\nB. Fully extended → retracted → mid-stroke\nC. Fully retracted → fully extended → setpoint\nD. Randomized movement to detect stroke\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:13:48Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0009",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What happens after three failed calibration attempts on an SSE161.05U?\nA. The actuator shuts down completely\nB. The stem remains extended and valves stay open\nC. The controller restarts the calibration\nD. A manual override is automatically triggered\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:14:27Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0010",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What is required for correct calibration?\nA. Valve stroke > 0.05 inch (1.2 mm)\nB. Valve stroke < 0.05 inch (1.2 mm)\nC. High ambient humidity\nD. Manual override engaged\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:14:41Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0011",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For SSE161.05U and SSF161.05U, what is the input impedance of the DC 0–10 V control signal?\nA. 1 kΩ\nB. 10 kΩ\nC. 100 kΩ\nD. 1 MΩ\nAnswer: C\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:14:55Z"
+  },
+  {
+    "id": "A6V12681514_p2_q0012",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: When the actuator is de-energized, what does it do?\nA. Automatically retracts fully\nB. Automatically extends fully\nC. Maintains its current position\nD. Returns to factory calibration\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:15:12Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0013",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the front panel of the SAMMS-MV device, which LED is located at the top-left of the diagnostic LED column as shown in the figure?\nA. CPU Fault\nB. Ground Fault\nC. Current Unbalance\nD. External Trip\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:17:15Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0014",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In Figure 3.4, which pushbutton (PB1–PB6) is labeled as the STOP/OFF button?\nA. PB6\nB. PB3\nC. PB1\nD. PB4\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:17:25Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0015",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the LED status table, when the Phase Unbalance LED is flashing, what does it represent?\nA. Current unbalance above 40%\nB. Motor winding overheated\nC. Current unbalance between 20% and 40%\nD. Loss of load\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:17:50Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0016",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the full-voltage non-reversing wiring diagram, which terminal numbers are used for the ACT Inputs from the current sensors?\nA. Terminals 1–3\nB. Terminals 5–6\nC. Terminals 14–16\nD. Terminals 9–12\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:18:04Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0017",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the rear-view communications diagram, which pin on the 5-pin connector is labeled “+” for RS-485?\nA. Pin 1\nB. Pin 3\nC. Pin 4\nD. Pin 5\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:18:16Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0018",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the dimensional drawing, what is the height of the SAMMS-MV device?\nA. 2.125 inches\nB. 3.25 inches\nC. 6.00 inches\nD. 6.25 inches\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:18:27Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0019",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What overload trip class does the SAMMS-MV default to?\nA. Class 23\nB. Class 2\nC. Class 10\nD. Class 5\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:18:36Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0020",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What control power input is required to operate the SAMMS-MV device?\nA. 24 VDC\nB. 115 VAC\nC. 12 VAC\nD. 5 VDC\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:19:28Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0021",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For overload relay size H3B, what is the default ground fault pickup current?\nA. 7A\nB. 10A\nC. 20A\nD. 40A\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:19:42Z"
+  },
+  {
+    "id": "user-manual-14861_(manymanuals.com)_p1_q0022",
+    "pdf_name": "user-manual-14861_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-14861_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In Figure 3.2, what does the circular ladder symbol represent?\nA. A timer contact\nB. An output device such as a coil driver or pilot LED\nC. A remote AC input\nD. A pushbutton\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:19:54Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0023",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the actuator diagram (4540Z01), which numbered component represents the manual adjuster?\nA. 3\nB. 1\nC. 4\nD. 5\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:22:01Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0024",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the PCB diagram (4573Z02), how do you set the actuator to a linear flow characteristic?\nA. S1 connected to B and C\nB. S1 connected to A and C\nC. S1 connected to A and B\nD. S1 disconnected\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:22:24Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0025",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the wiring diagram for 3-position control (4540A03), which terminals receive the 3-position control voltages?\nA. Terminals Y1 and Y2\nB. Terminals R and U\nC. Terminals 11 and 12\nD. Terminals SP and SN\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:23:03Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0026",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the dimension drawing, what is the overall height (without valve) of the SQD actuator?\nA. 32 mm\nB. 80 mm\nC. 111 mm\nD. 128 mm\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:23:21Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0027",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Which actuator operates on AC 230 V?\nA. SQD65\nB. SQD85.03\nC. SQD35.00\nD. All types\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:23:37Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0028",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For SQD65, which signal closes the valve (A→AB port)?\nA. DC 0 V or 0 Ω\nB. 1000 Ω\nC. DC 10 V\nD. Removal of supply voltage\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:24:05Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0029",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: On the terminal strip drawing for SQD65, what does terminal U represent?\nA. 3-position input\nB. Position feedback output\nC. Neutral conductor\nD. Auxiliary switch input\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:24:18Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p1_q0030",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "C:\\Users\\rozku\\Desktop\\Research_Internship\\Project\\siemens_test\\pdfs\\user-manual-4019_(manymanuals.com).pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: How many SQD65 actuators can be operated in parallel on the same control signal?\nA. 1\nB. 3\nC. 5\nD. 10\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "timestamp": "2025-11-18T03:24:59Z"
+  }
+]
