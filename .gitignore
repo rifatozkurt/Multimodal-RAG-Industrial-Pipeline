@@ -14,5 +14,14 @@ wheels/
 .env
 *.env
 
+# generated data
+siemens_test/pdfs/extracted_images/
+siemens_test/pdfs/extracted_pages/
+siemens_test/vectorDB/
+siemens_manuals/pdfs/extracted_images/
+siemens_manuals/pdfs/extracted_pages/
+siemens_manuals/vectorDB/
+
+
 # Miscellaneous
 src/scratchpad.ipynb
