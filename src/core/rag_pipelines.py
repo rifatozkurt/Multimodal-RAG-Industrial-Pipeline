@@ -1,5 +1,4 @@
 from .retrievers import RetrieverMultiModal, RetrieverText, RetrieverMultiModal_experimental
-from .models_llm import get_groq_llm, load_llava_model, load_qwen_vl_model
 from .models_llm import *
 import torch
 
@@ -184,6 +183,7 @@ class AdvancedMultimodalRAG:
     def _preprocess_image_query(self, query):
         """
         Optional image caption generation from query using a text LLM (Groq), if provided.
+        Returns a concise 1-2 sentence caption suitable for CLIP embedding.
         """
         if self.text_llm is None:
             return query
@@ -191,7 +191,15 @@ class AdvancedMultimodalRAG:
         caption_query = message_image_caption_generator(message=query)
         response = self.text_llm.invoke(caption_query)
         image_caption = response.content
-        print("Generated image caption for retrieval:\n", image_caption[:500], "...\n")
+        
+        # Ensure caption is not too long for CLIP (additional safety)
+        if len(image_caption) > 200:
+            # Take first sentence if caption is too long
+            first_sentence = image_caption.split('.')[0] + '.'
+            image_caption = first_sentence if len(first_sentence) <= 200 else image_caption[:200]
+            print(f"Truncated long image caption for CLIP compatibility.")
+        
+        print("Generated image caption for retrieval:\n", image_caption, "\n")
         return image_caption
 
     def _build_text_context(self, text_docs, image_docs, max_text_chunks):
@@ -357,16 +365,30 @@ class AdvancedMultimodalRAG:
         if image_query_captioning:
             query_image_retrieval = self._preprocess_image_query(query=query)
         else:
-            query_image_retrieval = query_retrieval
+            # Always use original query for image retrieval to avoid CLIP token limits
+            # Expanded queries are too long for CLIP (77 token limit)
+            query_image_retrieval = query
         
         # 2) retrieval
         try:
             text_docs, image_docs = self.retriever_multimodal.retrieve(
                 query=query_retrieval,
+                query_image=query_image_retrieval,
                 top_k_text=top_k_text,
                 top_k_image=top_k_image,
                 match_threshold_text=match_threshold_text,
                 match_threshold_image=match_threshold_image)
+        except TypeError as e:
+            # Handle case where retriever doesn't support query_image parameter
+            if "query_image" in str(e):
+                text_docs, image_docs = self.retriever_multimodal.retrieve(
+                    query=query_retrieval,
+                    top_k_text=top_k_text,
+                    top_k_image=top_k_image,
+                    match_threshold_text=match_threshold_text,
+                    match_threshold_image=match_threshold_image)
+            else:
+                raise
         except Exception as exc:
             print("Error during retrieval:", exc)
             raise

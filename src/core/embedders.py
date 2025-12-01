@@ -63,7 +63,21 @@ class EmbeddingManager_Image:
         return img_feats.cpu().numpy()
 
     def embed_texts(self, texts):
-        inputs = self.processor(text=texts, return_tensors="pt", padding=True)
+        # Ensure texts are not too long for CLIP (77 token limit)
+        if isinstance(texts, str):
+            texts = [texts]
+        
+        truncated_texts = []
+        for text in texts:
+            if len(text) > 200:
+                # Truncate and add "..." to indicate truncation
+                truncated_text = text[:200].rsplit(' ', 1)[0] + "..."
+                print(f"Warning: Truncated long text for CLIP embedding: {text[:50]}...")
+                truncated_texts.append(truncated_text)
+            else:
+                truncated_texts.append(text)
+        
+        inputs = self.processor(text=truncated_texts, return_tensors="pt", padding=True)
         with torch.no_grad():
             txt_feats = self.model.get_text_features(**inputs)
         txt_feats = txt_feats / txt_feats.norm(dim=-1, keepdim=True)

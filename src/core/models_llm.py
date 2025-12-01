@@ -14,6 +14,7 @@
     
 """
 import os
+import torch
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
@@ -64,9 +65,9 @@ def message_image_caption_generator(message):
 
 
 
-def get_groq_llm(model_name="qwen/qwen3-32b", temperature=0.1, max_tokens=1024):
+def get_groq_llm(api_key, model_name="llama-3.1-8b-instant", temperature=0.1, max_tokens=1024):
     llm = ChatGroq(
-        groq_api_key=groq_api_key,
+        groq_api_key=api_key,
         model_name=model_name,
         temperature=temperature,
         max_tokens=max_tokens
@@ -159,10 +160,10 @@ def build_qwen_inputs(processor_qwen, query, text_context, image_paths, max_imag
 
 
 
-def load_llava_model(model_id):
+def load_llava_model(device="cuda:0"):
     processor = LlavaNextProcessor.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf")
-    model = LlavaNextForConditionalGeneration.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf", dtype="auto", low_cpu_mem_usage=True)
-    model.to("cuda:0")
+    model = LlavaNextForConditionalGeneration.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf", dtype=torch.float16, low_cpu_mem_usage=True)
+    model.to(device)
     return model, processor
 
 

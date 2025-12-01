@@ -43,9 +43,14 @@ class VectorDBManager:
         """
         print(f"Adding {len(documents)} documents...")
         
+        # Handle empty document list
+        if len(documents) == 0:
+            print("No documents to add. Skipping.")
+            return
+        
         # check sizes just in case
         if len(documents) != len(embeddings):
-            raise ValueError("The number of documents and embeddings must be the same.")
+            raise ValueError(f"The number of documents ({len(documents)}) and embeddings ({len(embeddings)}) must be the same.")
         
         id_list = []
         document_content_list = []

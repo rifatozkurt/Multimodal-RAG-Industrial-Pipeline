@@ -3,7 +3,7 @@ import torch
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from core.models_llm import groq_api_key, message_general, message_expander, message_cot, message_summarizer, message_image_caption_generator, load_llava_model, get_groq_llm, load_qwen_model, build_llava_inputs, build_qwen_inputs
-from core.rag_pipelines import AdvancedMultimodalRAG, BitsAndBytesConfig
+from core.rag_pipelines import AdvancedMultimodalRAG
 from core.retrievers import RetrieverMultiModal, RetrieverMultiModal_experimental
 from core.vectordb import VectorDBManager
 from core.embedders import EmbeddingManager, EmbeddingManager_Image
@@ -31,14 +31,18 @@ def main():
         model_llava, processor_llava = load_llava_model(device=device)
         model_qwen, processor_qwen = None, None
 
-    llm_llama31 = get_groq_llm(api_key=groq_api_key, model_name="groq/llama3-1.1b-chat", device=device)
+    llm_llama31 = get_groq_llm(api_key=groq_api_key, model_name="llama-3.1-8b-instant")
 
 
     embedding_manager_txt = EmbeddingManager(model_name=embedding_model_name)
     embedding_manager_images = EmbeddingManager_Image(model_name=image_embedding_model_name)
 
-    vector_db_manager_pdf = VectorDBManager.load_from_disk(os.path.join(vectordb_path, "pdf_db/"))
-    vector_db_manager_pdf_images = VectorDBManager.load_from_disk(os.path.join(vectordb_path, "pdf_image_db/"))
+    vector_db_manager_pdf = VectorDBManager(collection_name="pdf_documents_db",
+                                        directory=os.path.join(vectordb_path, "pdf_db/"),
+                                        source_type="pdf")
+    vector_db_manager_pdf_images = VectorDBManager(collection_name="pdf_image_documents_db",
+                                        directory=os.path.join(vectordb_path, "pdf_image_db/"),
+                                        source_type="pdf_image")
 
     retriever_multimodal_image = RetrieverMultiModal_experimental(vector_db_text=vector_db_manager_pdf,
                                 vector_db_image=vector_db_manager_pdf_images,
@@ -68,8 +72,11 @@ def main():
     )
     print("Final Response:")
     print(result['answer'])
-    print("Sources:")
-    for src in result['sources']:
+    print("Text Sources:")
+    for src in result['sources_text']:
+        print(src)
+    print("Image Sources:")
+    for src in result['sources_image']:
         print(src)
         
 if __name__ == "__main__":

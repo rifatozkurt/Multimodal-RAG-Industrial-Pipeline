@@ -59,8 +59,7 @@ def build_pipeline(selected_model: str):
     # Text LLM from Groq (adjust model_name if needed)
     llm_llama31 = get_groq_llm(
         api_key=groq_api_key,
-        model_name="groq/llama3-1.1b-chat",
-        device=device,
+        model_name="llama-3.1-8b-instant"
     )
 
     # Embedding managers
@@ -73,8 +72,12 @@ def build_pipeline(selected_model: str):
     pdf_db_path = os.path.join(vectordb_path, "pdf_db/")
     pdf_image_db_path = os.path.join(vectordb_path, "pdf_image_db/")
 
-    vector_db_manager_pdf = VectorDBManager.load_from_disk(pdf_db_path)
-    vector_db_manager_pdf_images = VectorDBManager.load_from_disk(pdf_image_db_path)
+    vector_db_manager_pdf = VectorDBManager(collection_name="pdf_documents_db",
+                                        directory=os.path.join(vectordb_path, "pdf_db/"),
+                                        source_type="pdf")
+    vector_db_manager_pdf_images = VectorDBManager(collection_name="pdf_image_documents_db",
+                                        directory=os.path.join(vectordb_path, "pdf_image_db/"),
+                                        source_type="pdf_image")
 
     # Multimodal retriever
     retriever_multimodal_image = RetrieverMultiModal_experimental(
@@ -156,9 +159,10 @@ def chat_with_rag(
             preprocess_type=preprocess,         # e.g. "expand", "chain_of_thought", or None
             summarize=summarize,                # bool
             image_query_captioning=image_query_captioning,  # bool
-            max_tokens=max_tokens,             # assuming your method supports this
+            max_new_tokens=max_tokens,             # assuming your method supports this
         )
         answer = result.get("answer", "[No answer returned]")
+        print(f"Debug: result type = {type(result)}, answer = {answer}")
     except TypeError:
         # In case your generate_response() doesn't support max_tokens yet
         result = mm_rag.generate_response(
@@ -172,9 +176,35 @@ def chat_with_rag(
             image_query_captioning=image_query_captioning,
         )
         answer = result.get("answer", "[No answer returned]")
+        print(f"Debug: result type = {type(result)}, answer = {answer}")
 
-    # Update chat history
-    history = history + [[message, answer]]
+    # Update chat history - ensure answer is a string, not dict
+    if isinstance(answer, dict):
+        answer_text = answer.get("answer", "[No answer returned]")
+    else:
+        answer_text = str(answer) if answer is not None else "[No answer]"
+    
+    # Ensure history is in correct format for Gradio chatbot
+    if history is None:
+        history = []
+    
+    # Ensure both message and answer are strings and not empty
+    message_str = str(message).strip() if message is not None else "Empty message"
+    answer_str = str(answer_text).strip() if answer_text is not None else "No answer"
+    
+    # Ensure no empty strings which might cause Gradio issues
+    if not message_str:
+        message_str = "Empty message"
+    if not answer_str:
+        answer_str = "No answer provided"
+    
+    print(f"Debug: Adding to history - message: {message_str[:50]}..., answer: {answer_str[:50]}...")
+    
+    # Use messages format for newer Gradio versions (which seems to be required)
+    history.append({"role": "user", "content": message_str})
+    history.append({"role": "assistant", "content": answer_str})
+    
+    print(f"Debug: Final history length: {len(history)}")
 
     return history, state
 
@@ -196,6 +226,7 @@ def create_interface():
                 user_input = gr.Textbox(
                     label="Your question",
                     placeholder="Ask something about your documents...",
+                    value="how do drones localize themselves in the lack of gnss signals?",
                     lines=2,
                 )
                 send_btn = gr.Button("Send")
@@ -214,7 +245,7 @@ def create_interface():
 
                 preprocess_type = gr.Radio(
                     choices=["none", "expand", "chain_of_thought"],
-                    value="expand",
+                    value="none",
                     label="Query preprocessing",
                 )
 
@@ -263,8 +294,30 @@ def create_interface():
         # Gradio state to cache pipeline & backend
         state = gr.State(value=None)
 
-        # Wire the button
-        send_btn.click(
+        # Wire the button and Enter key
+        def send_message_and_clear():
+            return ""
+        
+        send_event = send_btn.click(
+            fn=chat_with_rag,
+            inputs=[
+                user_input,
+                chatbot,
+                selected_model,
+                preprocess_type,
+                summarize,
+                image_query_captioning,
+                top_k_text,
+                top_k_image,
+                max_images,
+                max_tokens,
+                state,
+            ],
+            outputs=[chatbot, state],
+        )
+        
+        # Also enable Enter key submission
+        user_input.submit(
             fn=chat_with_rag,
             inputs=[
                 user_input,
@@ -282,9 +335,15 @@ def create_interface():
             outputs=[chatbot, state],
         )
 
-        # Clear user input after sending
+        # Clear user input after sending (both button and Enter)
         send_btn.click(
-            fn=lambda: "",
+            fn=send_message_and_clear,
+            inputs=None,
+            outputs=user_input,
+        )
+        
+        user_input.submit(
+            fn=send_message_and_clear,
             inputs=None,
             outputs=user_input,
         )

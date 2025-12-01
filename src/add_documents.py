@@ -40,8 +40,6 @@ def main():
                         page_zoom=2.0,
                         crop_pages=(2,2)
                         )
-    pdf_image_paths = [doc.metadata["image_path"] for doc in documents_pdf_imgs]
-    pdf_pages_paths = [doc.metadata["page_image_path"] for doc in documents_pdf_pages]
     
     # create a txt file to log extracted file paths 
     extracted_files_log = os.path.join(documents_path, "extracted_files.txt")
@@ -55,6 +53,10 @@ def main():
     documents_pdf_imgs = [doc for doc in documents_pdf_imgs if doc.metadata["file_path"] not in extracted_files]
     documents_pdf_pages = [doc for doc in documents_pdf_pages if doc.metadata["file_path"] not in extracted_files]
     documents_pdf = [doc for doc in documents_pdf if doc.metadata["file_path"] not in extracted_files]
+    
+    # Create image paths AFTER filtering to ensure consistency
+    pdf_image_paths = [doc.metadata["image_path"] for doc in documents_pdf_imgs]
+    pdf_pages_paths = [doc.metadata["page_image_path"] for doc in documents_pdf_pages]
     
     # update the log file with newly extracted files
     filenames_to_be_logged = []

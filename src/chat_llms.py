@@ -15,20 +15,21 @@ def main():
     if selected_model == "Qwen/Qwen3-VL-8B-Instruct":
         llm, processor = load_qwen_model(device=device)
         inputs = build_qwen_inputs(processor, query, text_context="", image_paths=image_paths, max_images=2)
-        inputs = {k: v.to(device) for k, v in inputs.items()}
+        inputs = inputs.to(device)
         with torch.no_grad():
             outputs = llm.generate(**inputs, max_new_tokens=512)
-        response = processor.decode(outputs.sequences[0], skip_special_tokens=True)
+        generated_ids_trimmed = [out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, outputs)]
+        response_list = processor.batch_decode(generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=True)
+        response = response_list[0] if response_list else ""
         print("Qwen3-VL Response:")
         print(response)
         
     elif selected_model == "llava-hf/llava-v1.6-mistral-7b-hf":
         llm, processor = load_llava_model(device=device)
-        inputs = build_llava_inputs(processor, query, image_paths=image_paths, max_images=2)
-        inputs = {k: v.to(device) for k, v in inputs.items()}
+        inputs = build_llava_inputs(processor, query, text_context="", image_paths=image_paths, max_images=2, device=device)
         with torch.no_grad():
             outputs = llm.generate(**inputs, max_new_tokens=512)
-        response = processor.decode(outputs.sequences[0], skip_special_tokens=True)
+        response = processor.decode(outputs[0], skip_special_tokens=True)
         print("LLaVA Response:")
         print(response)
     

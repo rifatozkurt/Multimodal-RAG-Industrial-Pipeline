@@ -122,7 +122,7 @@ class RetrieverMultiModal_experimental:
         self.embedding_manager_image = embedding_manager_image
 
 
-    def retrieve(self, query, top_k_text, top_k_image, match_threshold_text=-0.5, match_threshold_image=-0.5):
+    def retrieve(self, query, query_image=None, top_k_text=3, top_k_image=3, match_threshold_text=-0.5, match_threshold_image=-0.5):
 
         print(f"Retrieving {top_k_text} text document chunks and {top_k_image} image document chunks...")
 
@@ -135,7 +135,7 @@ class RetrieverMultiModal_experimental:
             
             retrieved_doc_names_page_num = [{"doc_name": md["file_path"].split("\\")[-1], "page": md["page"]} for md in results_text["metadatas"][0] if "page" in md]
 
-            query_embedding_image = self.embedding_manager_image.embed_texts(query)[0].tolist()
+            query_embedding_image = self.embedding_manager_image.embed_texts(query_image or query)[0].tolist()
             results_image = self.vector_db_image.collection.query(
                 query_embeddings=[query_embedding_image],
                 where={ "doc_id": {"$in": [doc["doc_name"] for doc in retrieved_doc_names_page_num]} },

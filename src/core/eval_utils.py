@@ -7,9 +7,9 @@ from tqdm import tqdm
 
 CHOICES = ["A", "B", "C", "D"]
 
-def answer_question_with_qwen(example, mm_rag, verbose=False):
+def answer_question_with_qwen(example, mm_rag, verbose=False, backend="qwen_vl", preprocess_type=None):
     """
-    Run the AdvancedMultimodalRAG pipeline (Qwen-VL backend) for a single example.
+    Run the AdvancedMultimodalRAG pipeline for a single example.
     Returns:
         raw_answer_text (str)
         full_result_dict (dict from AdvancedMultimodalRAG.generate_response)
@@ -22,14 +22,14 @@ def answer_question_with_qwen(example, mm_rag, verbose=False):
 
     result = mm_rag.generate_response(
         query=question_text,
-        backend="qwen_vl",
+        backend=backend,
         top_k_text=3,
         top_k_image=3,
         match_threshold_text=-0.5,
         match_threshold_image=-0.6,
         max_images=3,
         max_new_tokens=64,
-        preprocess_type=None,   # no query expansion / CoT for retrieval during eval
+        preprocess_type=preprocess_type,   # configurable preprocessing
         summarize=False,
     )
 
