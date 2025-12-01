@@ -1,2 +1,2 @@
 ./documents/pdfs/wildpaper.pdf
-documents\pdfs\wildpaper.pdf
+documents/pdfs/wildpaper.pdf
