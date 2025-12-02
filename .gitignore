@@ -16,7 +16,6 @@ wheels/
 *.env
 
 # generated data
-siemens_test
 
 
 # Miscellaneous
