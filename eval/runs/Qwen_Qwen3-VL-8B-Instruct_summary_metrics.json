@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "preprocess_type": null,
+  "total_questions": 60,
+  "answered_questions": 60,
+  "overall_accuracy": 0.8666666666666667,
+  "answered_accuracy": 0.8666666666666667,
+  "avg_text_docs": 3.0,
+  "avg_image_docs": 3.0,
+  "avg_images_used": 3.0
+}

@@ -1,0 +1,103 @@
+============================================================
+EVALUATION RESULTS
+============================================================
+Total questions: 60
+Questions answered: 60 (100.0%)
+Questions unanswered: 0 (0.0%)
+
+Overall Accuracy: 0.867 (86.7%)
+Accuracy (answered only): 0.867 (86.7%)
+
+Classification Report (answered questions only):
+              precision    recall  f1-score   support
+
+           A       0.83      0.77      0.80        13
+           B       0.89      0.85      0.87        20
+           C       0.88      0.94      0.91        16
+           D       0.83      0.91      0.87        11
+
+    accuracy                           0.87        60
+   macro avg       0.86      0.87      0.86        60
+weighted avg       0.87      0.87      0.87        60
+
+
+Confusion Matrix:
+        Pred_A  Pred_B  Pred_C  Pred_D
+True_A      10       1       1       1
+True_B       2      17       0       1
+True_C       0       1      15       0
+True_D       0       0       1      10
+
+========================================
+ANALYSIS BY PDF
+========================================
+                                         Total_Questions  Correct_Answers  ...  Avg_Image_Docs  Avg_Images_Used
+pdf_name                                                                   ...                                 
+A6V112487691.pdf                                       3                3  ...             3.0              3.0
+A6V12681514.pdf                                        3                3  ...             3.0              3.0
+A6V14140218.pdf                                        3                3  ...             3.0              3.0
+A6V14140220.pdf                                        3                3  ...             3.0              3.0
+A6V15441859.pdf                                        3                3  ...             3.0              3.0
+DESIGOpx.pdf                                           3                3  ...             3.0              3.0
+Gigaset.pdf                                            3                3  ...             3.0              3.0
+WL250_ST-S_SA_wt10_en.pdf                              3                1  ...             3.0              3.0
+colorimeter.pdf                                        3                2  ...             3.0              3.0
+sitransl_lr120_fi01_en.pdf                             6                5  ...             3.0              3.0
+sitranstdl_ap01_en.pdf                                 3                3  ...             3.0              3.0
+surge_protector.pdf                                    3                2  ...             3.0              3.0
+user-manual-13208_(manymanuals.com).pdf                3                3  ...             3.0              3.0
+user-manual-16588_(manymanuals.com).pdf                3                3  ...             3.0              3.0
+user-manual-17028_(manymanuals.com).pdf                3                3  ...             3.0              3.0
+user-manual-26104_(manymanuals.com).pdf                3                1  ...             3.0              3.0
+user-manual-4019_(manymanuals.com).pdf                 3                2  ...             3.0              3.0
+user-manual-47808_(manymanuals.com).pdf                3                3  ...             3.0              3.0
+vacuum_circuitbreaker.pdf                              3                3  ...             3.0              3.0
+
+[19 rows x 6 columns]
+
+========================================
+RETRIEVAL STATISTICS
+========================================
+Average text documents retrieved: 3.00
+Average image documents retrieved: 3.00
+Average images used in generation: 3.00
+
+Accuracy by number of images used:
+               Question_Count  Accuracy
+n_images_used                          
+3                          60     0.867
+
+========================================
+SAMPLE RESULTS
+========================================
+Correct predictions:
+Q: The following is a question about an industrial device. Give only the letter choice in your answer.
+...
+GT: C | Pred: C | Raw: C...
+
+Q: The following is a question about an industrial device. Give only the letter choice in your answer.
+...
+GT: D | Pred: D | Raw: D...
+
+Q: The following is a question about an industrial device. Give only the letter choice in your answer.
+...
+GT: C | Pred: C | Raw: C...
+
+Incorrect predictions:
+Q: The following is a question about an industrial device. Give only the letter choice in your answer.
+...
+GT: B | Pred: A | Raw: The provided text and images do not contain any in...
+
+Q: The following is a question about an industrial device. Give only the letter choice in your answer.
+...
+GT: B | Pred: A | Raw: A...
+
+Q: The following is a question about an industrial device. Give only the letter choice in your answer.
+...
+GT: A | Pred: B | Raw: B...
+
+Detailed results saved to: eval/runs/Qwen_Qwen3-VL-8B-Instruct_multimodal_rag_results.csv
+Summary metrics saved to: eval/runs/Qwen_Qwen3-VL-8B-Instruct_summary_metrics.json
+============================================================
+EVALUATION COMPLETED
+============================================================

@@ -1,0 +1,5 @@
+{
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "preprocess_type": null,
+  "total_questions": 60,
+  "answered_questions": 
