@@ -16,7 +16,8 @@ wheels/
 *.env
 
 # generated data
-
+documents/outputs/
+documents/pdfs/
 
 # Miscellaneous
 src/scratchpad.ipynb
