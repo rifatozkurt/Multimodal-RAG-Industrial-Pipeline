@@ -182,12 +182,21 @@ class AdvancedMultimodalRAG:
     
     def _preprocess_image_query(self, query):
         """
-        Optional image caption generation from query using a text LLM (Groq), if provided.
-        Returns a concise 1-2 sentence caption suitable for CLIP embedding.
+        Image query preprocessing for CLIP compatibility.
+        - If text LLM is available: Generate a concise image caption
+        - If no text LLM: Apply CLIP-safe truncation to original query
+        Returns a query suitable for CLIP embedding (≤200 characters).
         """
         if self.text_llm is None:
-            return query
+            # No text LLM available - apply CLIP-safe truncation
+            if len(query) > 200:
+                truncated_query = query[:200].rsplit(' ', 1)[0] + "..."
+                print(f"No text LLM available. Truncated query for CLIP: {truncated_query}")
+                return truncated_query
+            else:
+                return query
 
+        # Generate image caption using text LLM
         caption_query = message_image_caption_generator(message=query)
         response = self.text_llm.invoke(caption_query)
         image_caption = response.content
@@ -362,11 +371,16 @@ class AdvancedMultimodalRAG:
             preprocess_type=preprocess_type,
             chunk_size=chunk_size)
         
+        # Handle image query with CLIP token limit safety
         if image_query_captioning:
+            # User explicitly wants image captioning
+            query_image_retrieval = self._preprocess_image_query(query=query)
+        elif len(query) > 200:
+            # Query is too long for CLIP - automatically generates a caption
+            print(f"Query too long for CLIP ({len(query)} chars). Auto-generating image caption...")
             query_image_retrieval = self._preprocess_image_query(query=query)
         else:
-            # Always use original query for image retrieval to avoid CLIP token limits
-            # Expanded queries are too long for CLIP (77 token limit)
+            # Query is short enough - use original query for image retrieval
             query_image_retrieval = query
         
         # 2) retrieval
@@ -395,6 +409,7 @@ class AdvancedMultimodalRAG:
 
         if not text_docs and not image_docs:
             print("No relevant multimodal documents found.")
+            """
             result = {
                 "answer": "No relevant documents found. Stopping to avoid hallucinations.",
                 "backend": backend,
@@ -410,6 +425,7 @@ class AdvancedMultimodalRAG:
             }
             self.message_history.append(result)
             return result
+            """
 
         # 3) build text context
         text_context = self._build_text_context(

@@ -124,7 +124,7 @@ class RetrieverMultiModal_experimental:
 
     def retrieve(self, query, query_image=None, top_k_text=3, top_k_image=3, match_threshold_text=-0.5, match_threshold_image=-0.5):
 
-        print(f"Retrieving {top_k_text} text document chunks and {top_k_image} image document chunks...")
+        print(f"Retrieving top: {top_k_text} text document chunks and top: {top_k_image} image document chunks...")
 
         try:
             query_embedding_text = self.embedding_manager_text.create_embeddings(query)[0].tolist()

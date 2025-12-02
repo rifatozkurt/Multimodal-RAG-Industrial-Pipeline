@@ -3,7 +3,7 @@ from tqdm import tqdm
 from langchain_community.document_loaders import PyMuPDFLoader,DirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from core.config import documents_path, chunking_size, chunking_step, embedding_model_name, image_embedding_model_name, vectordb_path
-from core.data_loaders import PdfImagesLoader, chunk_documents
+from core.data_loaders import PdfImagesLoader, chunk_documents, PdfExtractionLoader
 from core.embedders import EmbeddingManager, EmbeddingManager_Image
 from core.vectordb import VectorDBManager
 

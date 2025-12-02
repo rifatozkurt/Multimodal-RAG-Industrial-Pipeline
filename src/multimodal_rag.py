@@ -1,8 +1,6 @@
 import os
 import torch
-from langchain_groq import ChatGroq
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
-from core.models_llm import groq_api_key, message_general, message_expander, message_cot, message_summarizer, message_image_caption_generator, load_llava_model, get_groq_llm, load_qwen_model, build_llava_inputs, build_qwen_inputs
+from core.models_llm import groq_api_key, load_llava_model, get_groq_llm, load_qwen_model
 from core.rag_pipelines import AdvancedMultimodalRAG
 from core.retrievers import RetrieverMultiModal, RetrieverMultiModal_experimental
 from core.vectordb import VectorDBManager
@@ -11,25 +9,29 @@ from core.config import embedding_model_name, image_embedding_model_name, docume
 
 #-----------------------------------------------------------------------
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-
+print(f"Using device: {device}")
 selected_model = "Qwen/Qwen3-VL-8B-Instruct"  # options: "Qwen/Qwen3-VL-8B-Instruct", "llava-hf/llava-v1.6-mistral-7b-hf"
 
-query = "What maintenance steps are recommended for the equipment shown in the images?"
-image_paths = ["../documents/pdf/extracted_images/wildpaper_p1_x61_w858_h450.png",]
+query = "what happens if the gnss access is lost in a drone? what does the drone see in the map?"
 
-preprocess_type = "expand"   # or None / "chain_of_thought"
+preprocess_type = None   # or None / "chain_of_thought"
 summarize = False
 image_query_captioning = False
+max_new_tokens = 256
 
 #-----------------------------------------------------------------------
 
 def main():
+    # Initialize model variables
+    model_qwen, processor_qwen = None, None
+    model_llava, processor_llava = None, None
+    
     if selected_model == "Qwen/Qwen3-VL-8B-Instruct":
         model_qwen, processor_qwen = load_qwen_model(device=device)
-        model_llava, processor_llava = None, None
     elif selected_model == "llava-hf/llava-v1.6-mistral-7b-hf":
         model_llava, processor_llava = load_llava_model(device=device)
-        model_qwen, processor_qwen = None, None
+    else:
+        raise ValueError(f"Unsupported model: {selected_model}")
 
     llm_llama31 = get_groq_llm(api_key=groq_api_key, model_name="llama-3.1-8b-instant")
 
@@ -69,6 +71,7 @@ def main():
         preprocess_type=preprocess_type,   # or None / "chain_of_thought"
         summarize=summarize,
         image_query_captioning=image_query_captioning,
+        max_new_tokens=max_new_tokens
     )
     print("Final Response:")
     print(result['answer'])
