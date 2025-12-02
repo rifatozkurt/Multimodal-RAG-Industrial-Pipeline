@@ -699,32 +699,24 @@ class PdfImagesLoader:
                             with open(save_path, "wb") as f:
                                 f.write(img_bytes)
 
-                        # Ensure all metadata values are ChromaDB-compatible (no lists/arrays)
-                        metadata = {
-                            "type": "image",
-                            "doc_id": pdf_name,
-                            "page": page_num,
-                            "file_path": self.pdf_path,
-                            "image_path": save_path,
-                            "image_ext": ext,
-                            "image_xref": xref,
-                            "width": width,
-                            "height": height,
-                            "bbox": str(bbox),
-                            "has_image": True,
-                            "page_text": page_text,
-                            "url": f"{pdf_name}#page={page_num}",
-                        }
-                        
-                        # Convert any list/array values to strings for ChromaDB compatibility
-                        for key, value in metadata.items():
-                            if isinstance(value, (list, tuple)):
-                                metadata[key] = str(value)
-                        
                         image_docs.append(
                             Document(
                                 page_content="",
-                                metadata=metadata,
+                                metadata={
+                                    "type": "image",
+                                    "doc_id": pdf_name,
+                                    "page": page_num,
+                                    "file_path": self.pdf_path,
+                                    "image_path": save_path,
+                                    "image_ext": ext,
+                                    "image_xref": xref,
+                                    "width": width,
+                                    "height": height,
+                                    "bbox": str(bbox),
+                                    "has_image": True,
+                                    "page_text": page_text,
+                                    "url": f"{pdf_name}#page={page_num}",
+                                },
                             )
                         )
                     except Exception as ex:

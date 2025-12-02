@@ -138,7 +138,7 @@ class RetrieverMultiModal_experimental:
             query_embedding_image = self.embedding_manager_image.embed_texts(query_image or query)[0].tolist()
             results_image = self.vector_db_image.collection.query(
                 query_embeddings=[query_embedding_image],
-                where={ "doc_id": {"$in": [doc["doc_name"] for doc in retrieved_doc_names_page_num]} },
+                #where={ "doc_id": {"$in": [doc["doc_name"] for doc in retrieved_doc_names_page_num]} },
                 n_results=top_k_image
             )
         

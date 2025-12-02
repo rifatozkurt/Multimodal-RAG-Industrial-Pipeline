@@ -57,10 +57,37 @@ def message_summarizer(message):
         HumanMessage(content=f"Summarize the following context concisely, focusing on key points and relevant information.\n\nContext:\n{message}\n\nSummary:"),
     ]
     
-def message_image_caption_generator(message):
+def message_image_caption_generator(message: str):
     return [
-        SystemMessage(content="You are a helpful assistant that generates relevant image captions from questions for image retrieval."),
-        HumanMessage(content=f"Given the question below, generate a retrieval-optimized caption for an image that would help answer this question in an industrial manual.\n\nThe caption must:\n- describe the type of image likely found in such a manual (e.g., schematic, wiring diagram, pinout, UI screenshot, parameter table, flowchart, graph)\n- include the key technical terms from the question (device names, model numbers, components)\n- avoid hallucinating numeric values or details not implied by the question\n- be specific, descriptive, and useful for image retrieval\n- be 1-2 sentences long.\n\nContext:\n{message}\n\nImage Caption:"),
+        SystemMessage(
+            content=(
+                "You generate short, retrieval-focused captions for technical images "
+                "from industrial manuals. The captions will be used as text queries "
+                "for an image embedding model (like CLIP).\n"
+                "Rules:\n"
+                "- Describe what the image visually shows (e.g. time-series plot, wiring diagram, "
+                "  block schematic, UI screenshot, parameter table).\n"
+                "- Reuse important technical terms from the question (devices, components, signals) "
+                "exactly as they appear.\n"
+                "- Do NOT invent any new brand names, model numbers, part numbers, or specific instruments.\n"
+                "- Do NOT make up numeric values, labels, or parameters not implied by the question.\n"
+                "- Be specific but concise: 1 short sentence, max 2."
+            )
+        ),
+        HumanMessage(
+            content=(
+                "Given the question below, write a single caption for an image from an industrial manual "
+                "that would help answer it.\n\n"
+                "The caption should:\n"
+                "- Start by indicating the image type (e.g. 'time-series plot', 'wiring diagram', "
+                "  'block diagram', 'UI screenshot', 'parameter table').\n"
+                "- Include the key technical terms from the question so the image is clearly about the same system.\n"
+                "- Avoid inventing brands, model numbers, or measurement devices that are not mentioned.\n"
+                "- Avoid invented numeric values or detailed labels.\n\n"
+                f"Question:\n{message}\n\n"
+                "Image caption:"
+            )
+        ),
     ]
 
 

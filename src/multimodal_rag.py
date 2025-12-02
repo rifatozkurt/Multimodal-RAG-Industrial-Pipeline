@@ -12,11 +12,11 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 selected_model = "Qwen/Qwen3-VL-8B-Instruct"  # options: "Qwen/Qwen3-VL-8B-Instruct", "llava-hf/llava-v1.6-mistral-7b-hf"
 
-query = "what happens if the gnss access is lost in a drone? what does the drone see in the map?"
+query = "how does the error of localization change through time for a uav flying in a gps denied environment?"
 
 preprocess_type = None   # or None / "chain_of_thought"
 summarize = False
-image_query_captioning = False
+image_query_captioning = True
 max_new_tokens = 256
 
 #-----------------------------------------------------------------------
@@ -68,6 +68,8 @@ def main():
         top_k_text=3,
         top_k_image=2,
         max_images=2,
+        match_threshold_text=-0.5,
+        match_threshold_image=-1,
         preprocess_type=preprocess_type,   # or None / "chain_of_thought"
         summarize=summarize,
         image_query_captioning=image_query_captioning,
@@ -80,7 +82,8 @@ def main():
         print(src)
     print("Image Sources:")
     for src in result['sources_image']:
-        print(src)
-        
+        #only print image source paths
+        print(src['metadata']['image_path'])
+
 if __name__ == "__main__":
     main()
