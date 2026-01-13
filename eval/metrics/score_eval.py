@@ -170,10 +170,22 @@ def build_nli_pipeline(model_name: str):
 def entailment_score(nli_pipe, premise: str, hypothesis: str) -> float | None:
     if not premise or not hypothesis:
         return None
-    outputs = nli_pipe({"text": premise, "text_pair": hypothesis})
+    outputs = nli_pipe(
+        {"text": premise, "text_pair": hypothesis},
+        truncation=True,
+        max_length=512,
+    )
     if not outputs:
         return None
-    scores = outputs[0]
+    # Normalize pipeline outputs across transformers versions.
+    if isinstance(outputs, dict):
+        scores = [outputs] if "label" in outputs else outputs.get("scores") or []
+    elif isinstance(outputs, list) and outputs and isinstance(outputs[0], list):
+        scores = outputs[0]
+    else:
+        scores = outputs
+    if not scores:
+        return None
     label2id = getattr(nli_pipe.model.config, "label2id", {}) or {}
     id2label = {v: k for k, v in label2id.items()}
     entail_ids = []

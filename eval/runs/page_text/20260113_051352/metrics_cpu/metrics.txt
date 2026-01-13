@@ -1,0 +1,25 @@
+Dataset: eval/datasets/dataset_mcq_fib.json
+Predictions: eval/runs/page_text/20260113_051352/predictions.jsonl
+Missing predictions: 0
+
+Counts:
+- fill_count: 40
+- image_retrieval_count: 140
+- mcq_count: 60
+- nli_count: 140
+- open_count: 40
+
+Metrics:
+- fill_exact_match: 0.425
+- fill_token_f1: 0.45
+- image_hit_at_1: 0.21428571428571427
+- image_hit_at_3: 0.37142857142857144
+- image_hit_at_5: 0.37142857142857144
+- image_mrr: 0.28214285714285714
+- mcq_accuracy: 0.7
+- mcq_parse_fail: 0.016666666666666666
+- nli_query_max: 0.03475415557290294
+- nli_query_mean: 0.015686401720943516
+- rouge1_f1: 0.5658761006918909
+- rouge2_f1: 0.31391016630781954
+- rougeL_f1: 0.4566515046847529

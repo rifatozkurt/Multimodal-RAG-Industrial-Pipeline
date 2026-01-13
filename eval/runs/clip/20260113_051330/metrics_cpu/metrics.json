@@ -1,0 +1,27 @@
+{
+  "dataset": "eval/datasets/dataset_mcq_fib.json",
+  "predictions": "eval/runs/clip/20260113_051330/predictions.jsonl",
+  "missing_predictions": 0,
+  "counts": {
+    "mcq_count": 60,
+    "image_retrieval_count": 140,
+    "nli_count": 140,
+    "fill_count": 40,
+    "open_count": 40
+  },
+  "metrics": {
+    "mcq_accuracy": 0.75,
+    "mcq_parse_fail": 0.03333333333333333,
+    "image_hit_at_1": 0.11428571428571428,
+    "image_hit_at_3": 0.2857142857142857,
+    "image_hit_at_5": 0.2857142857142857,
+    "image_mrr": 0.18928571428571428,
+    "nli_query_max": 0.03475415557290294,
+    "nli_query_mean": 0.015686401720943516,
+    "fill_exact_match": 0.525,
+    "fill_token_f1": 0.55,
+    "rouge1_f1": 0.5425305953963301,
+    "rouge2_f1": 0.3067630952198727,
+    "rougeL_f1": 0.4405344653589589
+  }
+}
