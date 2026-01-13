@@ -18,6 +18,10 @@ wheels/
 # generated data
 documents/outputs/
 documents/pdfs/
+documents/extraxted_files.txt
+eval/datasets/dataset_old.json
+eval/datasets/dataset_old2.json
+
 
 # Miscellaneous
 src/scratchpad.ipynb

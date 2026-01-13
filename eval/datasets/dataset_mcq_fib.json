@@ -1,0 +1,3698 @@
+[
+  {
+    "id": "A6V12681514_p2_q0001",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the flow characteristic graph for SSE161.05U and SSF161.05U, what is the percentage of calibrated valve stroke (H) when the control signal (Y) is at 6 V? \nA. 40% \nB. 50% \nC. 60% \nD. 70%\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:14:07Z"
+  },
+  {
+    "id": "A6V12681514_p3_q0002",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the LED indication table for the SSE131.09U actuator, what status is indicated when LED 3 is a constant green?  \nA. Actuator stem is fully retracted \nB. Actuator stem is moving in-between \nC. Actuator stem is fully extended \nD. Calibration error\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p3_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p3_det0.png"
+      },
+      {
+        "image_filename": "A6V12681514_p3_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p3_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:17:51Z"
+  },
+  {
+    "id": "A6V12681514_p13_q0003",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 13,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the connection diagrams for the SSE161.05U and SSF161.05U, which terminal label corresponds to the DC 0...10 V control signal?  \nA. G \nB. Y \nC. G0 \nD. SN\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p13_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p13_det2.png"
+      },
+      {
+        "image_filename": "A6V12681514_p13_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p13_det4.png"
+      },
+      {
+        "image_filename": "A6V12681514_p13_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p13_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:19:52Z"
+  },
+  {
+    "id": "A6V12681514_p4_q0004",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 4,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: To ensure trouble-free operation of the SSE/SSF actuators with third-party valves, the mechanical dimension 'Y' shown in the requirement drawing must be less than or equal to ______ inch.\nAnswer:",
+    "answer": "0.58",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p4_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p4_det0.png"
+      },
+      {
+        "image_filename": "A6V12681514_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p4_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:21:23Z"
+  },
+  {
+    "id": "A6V12681514_p7_q0005",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 7,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your ansver. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: During manual operation of the SSE161.05U or SSF161.05U using an Allen wrench, rotating the wrench clockwise will move the actuator stem ______.\nAnswer:",
+    "answer": "down",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p7_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p7_det1.png"
+      },
+      {
+        "image_filename": "A6V12681514_p7_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p7_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:22:37Z"
+  },
+  {
+    "id": "A6V14140218_p2_q0006",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the wiring diagram for the Siemens SL2 series, which symbols are used to identify the terminals for the \"From Preceding Appliance\" connection? \nA. +, +, – \nB. –, + \nC. L1, L2 \nD. G, Y, G0\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p2_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p2_det8.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:25:47Z"
+  },
+  {
+    "id": "A6V14140218_p2_q0007",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the mounting diagrams for the Siemens SL2 series, what specific type of screw is used to secure the device in a flush-mount single-gang configuration? \nA. #6-32 screw (2) \nB. #8 hi-lo screw (2) \nC. M30 x 1.5 nut \nD. 3-mm Allen screw\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p2_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p2_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:27:07Z"
+  },
+  {
+    "id": "A6V14140218_p3_q0008",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the Horn-Strobes Output Current Draw table for the Siemens SL2HS series, what is the current rating (Amps @ 24V) for the T3 HIGH dB setting when the device is set to 75cd? \nA. 0.037 \nB. 0.046 \nC. 0.109\nD. 0.077\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p3_det19.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p3_det19.png"
+      },
+      {
+        "image_filename": "A6V14140218_p3_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p3_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:29:51Z"
+  },
+  {
+    "id": "A6V14140218_p3_q0009",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your ansver. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the physical properties table for the Siemens SL2 series, the height dimension of the single-gang trim plate is ______ inches.\nAnswer:",
+    "answer": "5.25",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p3_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p3_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:31:08Z"
+  },
+  {
+    "id": "A6V14140218_p2_q0010",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 2,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your ansver. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the mounting diagrams for the Siemens SL2 series, the word ______ is printed at the top of the mounting plate to indicate correct orientation.\nAnswer:",
+    "answer": "Top",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p2_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p2_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:36:32Z"
+  },
+  {
+    "id": "A6V14140220_p2_q0011",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the wiring diagrams for the SL2CHSC, which configuration is used when the chime and strobe must operate independently? \nA. One (1) Circuit \nB. Two (2) Circuits \nC. Parallel Circuit \nD. Series Circuit\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p2_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det17.png"
+      },
+      {
+        "image_filename": "A6V14140220_p2_det19.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det19.png"
+      },
+      {
+        "image_filename": "A6V14140220_p2_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det5.png"
+      },
+      {
+        "image_filename": "A6V14140220_p2_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:39:01Z"
+  },
+  {
+    "id": "A6V14140220_p2_q0012",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the mounting diagrams for the Siemens SL2 series, what type of screws are specifically labeled for securing the mounting plate in a surface mount configuration using an SLSPBBC backbox? \nA. #6-32 screw \nB. M30 x 1.5 screw \nC. #8 thread cutting screw \nD. Allen head screw\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p2_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:40:27Z"
+  },
+  {
+    "id": "A6V14140220_p3_q0013",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the \"Strobe Only Output Current Draw\" table, what is the current rating (Amps) for the SL2CHSC series at a 177cd setting? \nA. 0.030 \nB. 0.086 \nC. 0.125 \nD. 0.185\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p3_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p3_det9.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:41:25Z"
+  },
+  {
+    "id": "A6V14140220_p3_q0014",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your ansver. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the physical properties section of the Technical Data table, the weight of the Siemens SL2 series chime-strobe appliance is ______ Lbs.\nAnswer:",
+    "answer": "1.1",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p3_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p3_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:42:15Z"
+  },
+  {
+    "id": "A6V14140220_p3_q0015",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your ansver. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the Technical Data table for the Siemens SL2 series, the chime operates at a frequency of ______ Hz.\nAnswer:",
+    "answer": "890",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p3_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p3_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:43:12Z"
+  },
+  {
+    "id": "A6V15441859_p2_q0016",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the Type Overview table for the QMX6 product family, which specific models include a CO2 sensor?\nA. QMX6.P70 and QMX6.P74\nB. QMX6.P40 and QMX6.P44\nC. QMX6.P30 and QMX6.P34\nD. All variants include it\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:45:12Z"
+  },
+  {
+    "id": "A6V15441859_p18_q0017",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 18,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the dimension drawing for the QMX6 series, what is the total height of the room unit housing in millimeters? \nA. 88 mm \nB. 97.6 mm \nC. 118.4 mm \nD. 120.8 mm\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p18_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p18_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:46:11Z"
+  },
+  {
+    "id": "A6V15441859_p7_q0018",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 7,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Looking at the \"General overview from the front\" (Fig. 1), which numerical label identifies the \"Air quality indicator\" on the device? \nA. 1 \nB. 2 \nC. 3 \nD. 4\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p7_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p7_det1.png"
+      },
+      {
+        "image_filename": "A6V15441859_p7_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p7_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:47:03Z"
+  },
+  {
+    "id": "A6V15441859_p18_q0019",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 18,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the dimension drawing for the QMX6 series, the depth of the room unit from the wall-mount surface to the front of the device is ______ mm.\nAnswer:",
+    "answer": "18",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p18_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p18_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:48:15Z"
+  },
+  {
+    "id": "A6V15441859_p9_q0020",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 9,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: In the symbols and buttons table for the QMX6 user interface, the symbol consisting of a human inside a house is described by the word ______.\nAnswer:",
+    "answer": "presence",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p9_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p9_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:52:32Z"
+  },
+  {
+    "id": "A6V112487691_p2_q0021",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the wiring diagrams for the Siemens SL2 Weatherproof series, which figure illustrates the configuration where the multi-tone horn and strobe activate in unison on one circuit? \nA. Fig. 1a \nB. Fig. 1b \nC. Fig. 2 \nD. Fig. 3a\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p2_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p2_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:57:30Z"
+  },
+  {
+    "id": "A6V112487691_p3_q0022",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the mounting options diagram for the Siemens SL2 series Type 3R/IP54 device, what is the required torque for the four #8-32 screws used to secure the appliance? A. 10 IN-LB \nB. 12 IN-LB \nC. 15 IN-LB \nD. 18 IN-LB\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p3_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p3_det17.png"
+      },
+      {
+        "image_filename": "A6V112487691_p3_det13.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p3_det13.png"
+      },
+      {
+        "image_filename": "A6V112487691_p3_det18.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p3_det18.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:58:36Z"
+  },
+  {
+    "id": "A6V112487691_p4_q0023",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the \"Alarm Tone Settings | Multi-tone Horn\" table, what is the required Switch (SW1) position for POS 2, POS 3, and POS 4 to produce the \"Slow Whoop\" tone? \nA. 1, 1, 1 \nB. 1, 0, 1 \nC. 0, 1, 0 \nD. 1, 0, 0\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p4_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-12T21:59:58Z"
+  },
+  {
+    "id": "A6V112487691_p4_q0024",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 4,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the Physical Properties table for the Siemens SL2 series, the product weight for an MT Horn (4X or 3R device) is ______ lbs.\nAnswer:",
+    "answer": "1.29",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:01:11Z"
+  },
+  {
+    "id": "A6V112487691_p4_q0025",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 4,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: In the \"Candela Settings | Multi-tone Strobe\" diagram for the Siemens SL2 series, the factory setting for the candela intensity is ______ cd.\nAnswer:",
+    "answer": "15",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p4_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det7.png"
+      },
+      {
+        "image_filename": "A6V112487691_p4_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det17.png"
+      },
+      {
+        "image_filename": "A6V112487691_p4_det14.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det14.png"
+      },
+      {
+        "image_filename": "A6V112487691_p4_det12.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det12.png"
+      },
+      {
+        "image_filename": "A6V112487691_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:02:49Z"
+  },
+  {
+    "id": "colorimeter_p2_q0026",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Looking at the spectral distribution graph for the Konica Minolta FD-7, which light source shows a distinct drop-off in relative intensity below 400 nm? \nA. A(Uvcut)  \nB. D65 \nC. D50\nD. Illuminant A\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p2_det11.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p2_det11.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:10:00Z"
+  },
+  {
+    "id": "colorimeter_p3_q0027",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the system diagram, which accessory is exclusive to the Konica Minolta FD-7 and not included with the FD-5? \nA. Target Mask (FD-A01) \nB. Polarization Filter (FD-A08) \nC. White Calibration Plane (FD-A06) \nD. Illuminance Adapter (FD-A03)\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p3_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p3_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:12:13Z"
+  },
+  {
+    "id": "colorimeter_p1_q0028",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 1,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the Konica Minolta FD-7 / FD-5 spectrodensitometer, which specific label is printed on the large button located on the side of the device? \nA. MENU \nB. OPTION \nC. SCAN / ILLUMINANCE\nD. DATA\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p1_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p1_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:16:52Z"
+  },
+  {
+    "id": "colorimeter_p3_q0029",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the dimension drawing, the main body of the Konica Minolta FD-7 has a total length of ______ mm when the target mask is not attached.\nAnswer:",
+    "answer": "165",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p3_det45.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p3_det45.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:17:34Z"
+  },
+  {
+    "id": "colorimeter_p4_q0030",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 4,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: Based on the main specifications table, the Konica Minolta FD-7 / FD-5 uses a ______ grating as its spectral separation device.\nAnswer:",
+    "answer": "concave",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p4_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:18:26Z"
+  },
+  {
+    "id": "DESIGOpx_p4_q0031",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the LED indicators table for the DESIGO PX PXR system controller, what is the meaning of the STATUS LED being \"Continuously on\" in red? \nA. No power supply is present \nB. A hardware fault was detected during self-test \nC. No valid firmware is present in the device \nD. The LONWORKS® node is not configured\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p4_det1.png"
+      },
+      {
+        "image_filename": "DESIGOpx_p4_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p4_det3.png"
+      },
+      {
+        "image_filename": "DESIGOpx_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p4_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:32:48Z"
+  },
+  {
+    "id": "DESIGOpx_p2_q0032",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the DESIGO PX PXR11/PXR12 topology diagram, which device is shown acting as a 3rd party device for integration? \nA. PXM20 \nB. QAX5... \nC. PXC... \nD. RXC...\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p2_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:33:52Z"
+  },
+  {
+    "id": "DESIGOpx_p9_q0033",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 9,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nBased on the RS232/COM2 port pin layout for the DESIGO PX PXR controller, which pin is assigned to the 'Signal ground' (GND)? \nA. Pin 2 \nB. Pin 3 \nC. Pin 5 \nD. Pin 7\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p9_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p9_det9.png"
+      },
+      {
+        "image_filename": "DESIGOpx_p9_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p9_det7.png"
+      },
+      {
+        "image_filename": "DESIGOpx_p9_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p9_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:35:07Z"
+  },
+  {
+    "id": "DESIGOpx_p7_q0034",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 7,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The DESIGO PX PXR11/PXR12 system controller features a total FLASH memory space (including Memory Extension Board) of ______ MByte.\nAnswer:",
+    "answer": "7",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p7_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p7_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:36:54Z"
+  },
+  {
+    "id": "DESIGOpx_p10_q0035",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 10,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the mechanical dimensions drawing, the total width of the DESIGO PX PXR controller housing is ______ mm.\nAnswer:",
+    "answer": "216",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p10_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p10_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:37:34Z"
+  },
+  {
+    "id": "Gigaset_p3_q0036",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the 'Pack contents' visual guide for the Gigaset C470 IP, which numbered item identifies the Ethernet (LAN) cable? \nA. Item 1 \nB. Item 2 \nC. Item 3 \nD. Item 4\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p3_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:40:15Z"
+  },
+  {
+    "id": "Gigaset_p3_q0037",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: When setting up the Gigaset C470 IP base station, into which specific socket location should the power lead of the mains adapter be inserted? \nA. The LAN socket at the side \nB. The lower connection socket at the rear \nC. The upper connection socket at the rear \nD. The side-mounted headset jack\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p3_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det2.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det28.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det28.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det35.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det35.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det41.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det41.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:43:57Z"
+  },
+  {
+    "id": "Gigaset_p3_q0038",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: On the Gigaset C47H handset, which specific key must be pressed and held to activate or deactivate the keypad lock? \nA. Talk key \nB. Message key \nC. * key \nD. # key\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p3_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det9.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:45:05Z"
+  },
+  {
+    "id": "Gigaset_p3_q0039",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: To ensure the Gigaset C470 IP handset batteries are fully prepared for the first use, they must be charged in the cradle for a continuous period of ______ hours.\nAnswer:",
+    "answer": "5",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p3_det14.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det14.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:46:40Z"
+  },
+  {
+    "id": "Gigaset_p3_q0040",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The paging key, which illuminates when the Gigaset C470 IP base station is successfully connected to a router, is located on the ______ of the device.\nAnswer:",
+    "answer": "front",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p3_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:48:03Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p7_q0041",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 7,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the SITRANS LR120 circuit diagrams, which wire color is used for the positive (+) Modbus signal in the 4-wire configuration? \nA. Black  \nB. Blue \nC. Brown\nD. White\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p7_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p7_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:50:10Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p4_q0042",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What is the rated accuracy of the SITRANS LR120 when it is measuring distances within its near range of 0 to 0.25 meters? \nA. 2 mm \nB. 5 mm \nC. 10 mm \nD. 20 mm\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p4_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p4_det0.png"
+      },
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p4_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:52:23Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p5_q0043",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For a 6\"/DN150 polypropylene adapter flange used with the SITRANS LR120, what is the standard number of slotted bolt holes provided? \nA. 6 \nB. 8 \nC. 10 \nD. 12\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p5_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:53:31Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p4_q0044",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 4,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The SITRANS LR120 transmitter features a hermetically sealed enclosure constructed from the chemically resistant material ______.\nAnswer:",
+    "answer": "PVDF",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p4_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p4_det0.png"
+      },
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p4_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:55:29Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p4_q0045",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 4,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The SITRANS LR120 utilizes W-band FMCW radar technology which emits a signal with a beam angle of ______ degrees.\nAnswer:",
+    "answer": "4",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p4_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p4_det0.png"
+      },
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p4_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:55:51Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p5_q0046",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: When installing the SITRANS Probe LU240, what is the maximum recommended measurement range for a model featuring an accuracy of 0.15% of range or 6 mm? \nA. 12 m \nB. 6 m \nC. 3 m\nD. 30 m\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p5_det0.png"
+      },
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p5_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p5_det1.png"
+      },
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p5_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p5_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T22:58:45Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p2_q0047",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the recommended mounting configurations for the SITRANS Probe LU240, which of the following is an incorrect installation practice? \nA. Mounting the probe perpendicular to the liquid surface \nB. Mounting the probe inside a standpipe \nC. Mounting the probe at an angle relative to the vessel's top curvature \nD. Mounting the probe away from the vessel's inflow stream\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p2_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:00:05Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p9_q0048",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 9,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For the SITRANS Probe LU240 with an optional Bluetooth adapter, what is the total vertical height from the bottom of the transducer to the top of the enclosure lid? \nA. 107.4 mm \nB. 113.4 mm \nC. 190.0 mm \nD. 231.4 mm\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p9_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p9_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:01:13Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p5_q0049",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 5,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The SITRANS Probe LU240 features an ultrasonic transducer that emits a signal with a beam angle of ______ degrees.\nAnswer:",
+    "answer": "10",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p5_det0.png"
+      },
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p5_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p5_det1.png"
+      },
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p5_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p5_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:02:17Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p10_q0050",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 10,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: When performing internal maintenance or connecting the HMI, the female end of the display cable on the SITRANS Probe LU240 connects to a male end located _____ the enclosure.\nAnswer:",
+    "answer": "inside",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p10_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p10_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:03:37Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p2_q0051",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the SITRANS TDL HMI and display interfaces diagram, which numbered component corresponds to the \"Local buttons\" used for manual parameterization? \nA. 1 \nB. 2 \nC. 3 \nD. 4\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p2_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p2_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:07:27Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p3_q0052",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the SITRANS TDL connection cables diagram, what does cable number 3 represent? \nA. Customer cable \nB. Ethernet cable \nC. Sensor cable \nD. Power supply cable\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p3_det23.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p3_det23.png"
+      },
+      {
+        "image_filename": "sitranstdl_ap01_en_p3_det16.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p3_det16.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:08:28Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p4_q0053",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the purging configuration diagram for the SITRANS TDL, where is the \"Input for purging on the process side\" located? \nA. Directly on the emitter unit housing \nB. On the process flange/interface assembly \nC. On the sensor unit tube \nD. At the very end of the purging tube\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p4_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:09:58Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p11_q0054",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 11,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the SITRANS TDL dimensional drawings, the height of the emitter unit housing is ______ mm.\nAnswer:",
+    "answer": "230",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p11_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p11_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:10:47Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p5_q0055",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 5,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: For a standard SITRANS TDL ammonia (NH3) application (Gas code C), the maximum path length allowed for measurement is ______ meters.\nAnswer:",
+    "answer": "25",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p5_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:11:13Z"
+  },
+  {
+    "id": "surge_protector_p5_q0056",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the technical specifications and model decoder, which specific Siemens TPS3 model is designed for a 480Y/277V 3-phase, 4-wire system with ground? \nA. TPS3C11 \nB. TPS3D11 \nC. TPS3E11 \nD. TPS3F11\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p5_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p5_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:17:13Z"
+  },
+  {
+    "id": "surge_protector_p8_q0057",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 8,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the provided installation wiring diagrams for the Siemens TPS3 11, which configuration requires exactly 3 \"Hot\" wires and 1 \"Ground\" wire without a Neutral connection? \nA. SPLIT \nB. WYE \nC. HI-LEG DELTA \nD. DELTA & HRG WYE\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p8_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det0.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det1.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det5.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det6.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det9.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det8.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:17:51Z"
+  },
+  {
+    "id": "surge_protector_p5_q0058",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the mechanical dimensions for the Siemens TPS3 11, what is the horizontal center-to-center distance between the mounting holes on the external flanges? A. 5.957\" \nB. 6.800\" \nC. 7.500\" \nD. 3.250\"\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p5_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p5_det9.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:18:33Z"
+  },
+  {
+    "id": "surge_protector_p6_q0059",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 6,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: For a flush mount installation of the Siemens TPS3 11, the required front-view wall cutout must be exactly ______ inches wide.\nAnswer:",
+    "answer": "6 1/16\"",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p6_det10.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p6_det10.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:19:23Z"
+  },
+  {
+    "id": "surge_protector_p9_q0060",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 9,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The Siemens TPS3 11 dry contact terminal block provides monitoring points labeled NO, C, and ______.\nAnswer:",
+    "answer": "NC",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p9_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p9_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:19:53Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p5_q0061",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the type summary and technical data for Siemens SQD actuators, what is the correct operating voltage for the SQD35.00 model? \nA. AC 230 V  \nB. AC 110 V \nC. AC 24 V\nD. DC 24 V\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p5_det0.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p5_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p5_det6.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p5_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p5_det8.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:22:02Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p3_q0062",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For the Siemens SQD65 actuator, which configuration of the S1 connector on the printed circuit board results in a linear flow characteristic? \nA. S1 connected to A and B \nB. S1 connected to A and C \nC. S1 connected to B and C \nD. S1 bridge removed\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det0.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det18.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det18.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det25.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det25.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:24:27Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p7_q0063",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 7,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the mechanical dimensions provided for the Siemens SQD actuators, what is the total height of the device from the base of the coupling nut to the top of the manual adjuster? \nA. 88 mm \nB. 111 mm \nC. 120 mm \nD. 134 mm\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p7_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p7_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:25:24Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p5_q0064",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The Siemens SQD series electromotoric actuators provide a minimum positioning force of ______ N.\nAnswer:",
+    "answer": "400",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p5_det0.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p5_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p5_det6.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p5_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p5_det8.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:26:21Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p6_q0065",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 6,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: In the internal wiring diagrams for Siemens SQD35.00 and SQD85.03, the end switch corresponding to 0% Hub is labeled ______.\nAnswer:",
+    "answer": "Cm2",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p6_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p6_det2.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p6_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p6_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:27:13Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p4_q0066",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the LED indicators for the Siemens PXC001 system controller, what is the meaning of a continuously ON red \"COMM\" LED? \nA. The device is in normal operation. \nB. Firmware is missing or corrupt. \nC. The battery is low and needs replacement. \nD. The system controller has no IP address configured.\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p4_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p4_det17.png"
+      },
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p4_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:31:09Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p10_q0067",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 10,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the dimension drawings for the Siemens PXC001 system controller, what is the total width of the device housing? \nA. 149.4 mm \nB. 133.5 mm \nC. 256 mm\nD. 271.5 mm\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p10_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p10_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:32:31Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p4_q0068",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the timing diagram for the \"Wink command\" used for physical identification of the Siemens PXC001, what is the frequency of the LED flashing during the active \"ON\" periods? \nA. 1 Hz \nB. 2 Hz \nC. 5 Hz \nD. 21 Hz\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p4_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p4_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:33:06Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p3_q0069",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: In the layout diagram of the Siemens PXC001 system controller, the slider used for mounting the device onto a DIN rail is identified by the number ______.\nAnswer:",
+    "answer": "16",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p3_det11.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p3_det11.png"
+      },
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p3_det12.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p3_det12.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:34:28Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p6_q0070",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 6,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The Siemens PXC001 system controller features a lithium battery type ______ for backing up the real-time clock.Answer:",
+    "answer": "CR2032",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p6_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p6_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:35:06Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p5_q0071",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the badge type comparison table, what symbol is used on the \"New\" design of the SiPass Program Master card to distinguish it from other masters? \nA. The letter \"P\" \nB. A plus (+) sign \nC. A moon icon \nD. A minus (-) sign\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p5_det11.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p5_det11.png"
+      },
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p5_det12.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p5_det12.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:37:10Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p7_q0072",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 7,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the LED indicators on SiPass ACS3110, which specific color is used for the \"Open\" status light on the SiPass reader panel? \nA. Yellow \nB. Green \nC. Red \nD. Orange\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p7_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p7_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:38:16Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p10_q0073",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 10,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the Siemens SiPass standalone ACS3110  \"Declaring the masters\" procedure, how many times must the Program Master be presented to the reader to initially enter Program Mode? \nA. 1 time \nB. 2 times \nC. 3 times \nD. 5 times\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p10_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p10_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:39:20Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p14_q0074",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 14,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: When the SiPass standalone system is in \"Night Lock Mode,\" the LED panel shows a solid light for both the \"Closed\" and \"______\" indicators.\nAnswer:",
+    "answer": "Night Lock",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p14_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p14_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:40:04Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p18_q0075",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 18,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: To void a badge by ID number, the SiPass Remote Programmer must be moved through the reader range while a numeric key is kept ______.\nAnswer:",
+    "answer": "depressed",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p18_det11.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p18_det11.png"
+      },
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p18_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p18_det1.png"
+      },
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p18_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p18_det9.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:41:50Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p2_q0076",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the terminal layout for the Siemens SIDOOR AT18, which specific pin on connector X6 is designated for the \"OPEN\" (Auf) control signal? \nA. Pin 1 \nB. Pin 2 \nC. Pin 3 \nD. Pin 5\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p2_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p2_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:43:15Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p6_q0077",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 6,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the menu structure for the Siemens SIDOOR AT18 User Terminal, which menu should be accessed to view the firmware (FW) version? \nA. QUICK-MENU \nB. MONITOR-MENU \nC. SERVICE-MENU \nD. LANGUAGE-MENU\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p6_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p6_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:43:51Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p2_q0078",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: When wiring the Siemens SIDOOR AT18 without a light barrier, which two terminal points on connector X6 must be bridged to terminal X4? \nA. Pins 1 and 2 \nB. Pins 3 and 4 \nC. Pins 2 and 5\nD. Pins 5 and 6 \nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p2_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p2_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:44:32Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p2_q0079",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 2,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: On the Siemens SIDOOR AT18 control unit, the 7-segment display used for door status and error codes is labeled ______.\nAnswer:",
+    "answer": "H5000",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p2_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p2_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:45:13Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p2_q0080",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 2,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the motor plug (X7) pinout for the Siemens SIDOOR AT18, the positive motor voltage (M+) is assigned to pin number ______.\nAnswer:",
+    "answer": "7",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p2_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p2_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:45:30Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p4_q0081",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 4,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What is the total machine length, represented as dimension K, for the LAGUN GCM 6 model? \nA. 9565 \nB. 10565 \nC. 11565 \nD. 13565\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p4_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p4_det3.png"
+      },
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p4_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p4_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:50:00Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p17_q0082",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 17,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: What is the maximum power (P) in kW of the LAGUN GCM main motor when operating at 4000 RPM under S6-60% conditions?\nA. 28\nB. 34,5\nC. 1068\nD. 1316\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p17_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p17_det17.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:51:32Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p5_q0083",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: For a LAGUN GCM machine with a 1500 mm Z-axis traverse, what is the specific measurement for dimension G? \nA. 591 \nB. 533 \nC. 184 \nD. 1200\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det0.png"
+      },
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det5.png"
+      },
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:52:22Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p3_q0084",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The distance between the T-slots on the LAGUN GCM working table is ______ mm.\nAnswer:",
+    "answer": "160",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p3_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p3_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:55:08Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p5_q0085",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: The physical depth measurement for the LAGUN GCM Orthogonal Head variant is ______ mm.\nAnswer:",
+    "answer": "437",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:55:49Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p29_q0086",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 29,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the Status Word (WX1) format for the SIMATIC 505 HSC, which specific bit provides the Output 1 Status for Channel 2? \nA. Bit 7 \nB. Bit 4 \nC. Bit 3 \nD. Bit 8\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p29_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p29_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:57:57Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p47_q0087",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 47,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the Output Current vs. Temperature relation of the SIMATIC 505 HSC, what is the maximum current (I) in mA allowed per point when 2 points per channel are active at 60°C? \nA. 400 mA \nB. 275 mA \nC. 200 mA \nD. 175 mA\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p47_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p47_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:58:45Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p15_q0088",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 15,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: When looking at the 2X Quadrature Mode waveform diagram for the SIMATIC 505 HSC, which input edge(s) of Input A trigger an increase in the count value when A leads B?\nA. Rising edges only \nB. Falling edges only \nC. Both rising and falling edges \nD. No edges (count is triggered by Input B)\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p15_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p15_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-12T23:59:36Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p25_q0089",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 25,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: For the SIMATIC 505 HSC, the maximum allowable width for a ring-style connector used with a #4 stud size is ______ mm.\nAnswer:",
+    "answer": "4.62",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p25_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p25_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:00:09Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p12_q0090",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 12,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: On the SIMATIC 505 HSC front bezel, the LED indicator labeled \"B\" for Channel 2 (CH2) is located directly to the right of the LED for ______ .\nAnswer:",
+    "answer": "CH1",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p12_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p12_det6.png"
+      },
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p12_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p12_det8.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:00:37Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p9_q0091",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 9,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Based on the current carrying capacity plot for the Siemens 3AH5 Vacuum Circuit-Breaker, what is the approximate rated normal current for a device following characteristic curve 4 if the ambient air temperature is 50°C? \nA. 2200 A \nB. 2400 A \nC. 2600 A \nD. 3000 A\nAnswer:",
+    "answer": "A",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p9_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p9_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:08:52Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p24_q0092",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 24,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the 12 kV electrical data table for the Siemens 3AH5 Vacuum Circuit-Breaker, what is the asymmetrical breaking current for model 3AH5 135-6? \nA. 14.7 kA \nB. 17.9 kA \nC. 28 kA \nD. 35.4 kA\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p24_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p24_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:09:32Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p9_q0093",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 9,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: Using the altitude correction factor for the Siemens 3AH5 Vacuum Circuit-Breaker, what correction factor (Ka) must be applied for an installation at a site altitude of 2500 meters?\nA. 1.00\nB. 1.10\nC. 1.20\nD. 1.30\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p9_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p9_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:10:21Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p29_q0094",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 29,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: On the 24 kV operating cycle plot for the Siemens 3AH5 Vacuum Circuit-Breaker, characteristic curve 8 indicates that at a breaking current of 16 kA, the permissible number of electrical operating cycles is ______.\nAnswer:",
+    "answer": "50",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p29_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p29_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:14:16Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p25_q0095",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 25,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the mechanical dimension drawing for the 12 kV Siemens 3AH5 Vacuum Circuit-Breaker, the standard height of the operating mechanism box is ______ mm.\nAnswer:",
+    "answer": "435",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p25_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p25_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:14:54Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p2_q0096",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the cable connection color-coding for the SIWAREX WL250 ST-S SA, which color corresponds to the SIG+ (measured signal +) function? \nA. Red \nB. Green \nC. White \nD. Black\nAnswer:",
+    "answer": "B",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det0.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:17:01Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p3_q0097",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 3,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In the SIWAREX WL250 ST-S SA dimensional drawings, which thread size (M) is required for a load cell with a rated load of 10 t? \nA. M8 \nB. M12 \nC. M20 x 1.5 \nD. M30 x 2\nAnswer:",
+    "answer": "D",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det3.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det5.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det6.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:17:45Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p2_q0098",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 2,
+    "question": "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: According to the technical specifications for the SIWAREX WL250 ST-S SA, what is the rated displacement (h) for a load cell with a rated load (Emax) of 1 t? \nA. 0.18 mm \nB. 0.24 mm \nC. 0.37 mm \nD. 0.57 mm\nAnswer:",
+    "answer": "C",
+    "question_type": "multiple_choice",
+    "structured_metadata": {
+      "type": "multiple_choice",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_index": 0
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det0.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:18:14Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p3_q0099",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 3,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: Based on the dimensional drawing for the SIWAREX WL250 ST-S SA, the total height (H) of a load cell rated for 2.5 t is ______ mm.\nAnswer:",
+    "answer": "99.06",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det3.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det5.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det6.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:19:20Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p2_q0100",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 2,
+    "question": "The following is a statement about an industrial device. Fill in the blank in this statement. Give only one word or number in your answer. You may give units with a number (10 V) or a number range (0-10) if necessary.\n\nQuestion: According to the technical specifications for the SIWAREX WL250 ST-S SA, the maximum tightening torque for the fixing screws of a 500 kg rated load cell is ______ Nm.\nAnswer:",
+    "answer": "75",
+    "question_type": "fill_in_the_blanks",
+    "structured_metadata": {
+      "type": "fill_in_the_blanks",
+      "template": "The ___ is connected to pin ___.",
+      "answers": [
+        "resistor",
+        "PA5"
+      ]
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det0.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:19:39Z"
+  },
+  {
+    "id": "A6V12681514_p10_q0101",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 10,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: What is the required orientation for a Siemens SSE161.05U electromotoric actuator when it is mounted onto a valve?\nAnswer:",
+    "answer": "The Siemens SSE161.05U actuator must be mounted in a position that is above horizontal.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p10_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p10_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:31:57Z"
+  },
+  {
+    "id": "A6V12681514_p3_q0102",
+    "pdf_name": "A6V12681514.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V12681514.pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the diagnostic documentation for the Siemens SSE161.05U actuator, what specific visual signal is displayed by the LED when the device has encountered an error?\nAnswer:",
+    "answer": "When an error occurs, the SSE161.05U actuator displays a constant red light on LED 2.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V12681514_p3_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p3_det0.png"
+      },
+      {
+        "image_filename": "A6V12681514_p3_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V12681514/A6V12681514_p3_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:34:55Z"
+  },
+  {
+    "id": "A6V14140218_p2_q0103",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the wiring documentation for the Siemens SL2 Series notification appliances, how must a technician prepare the wire ends before connecting them to the screw terminals?\nAnswer:",
+    "answer": "Technicians must strip the wire leads to a length of 3/8 inches. The terminals are designed to accept wire sizes ranging from #12 to #18 American Wire Gauge (AWG).",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p2_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p2_det8.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:35:57Z"
+  },
+  {
+    "id": "A6V14140218_p2_q0104",
+    "pdf_name": "A6V14140218.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140218.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the physical specifications of the Siemens SL2 Series, what are the height and width measurements for the actual appliance compared to its single-gang trim plate?\nAnswer:",
+    "answer": "The actual appliance measures 4.79\" (12.1 cm) in height and 2.76\" (7.0 cm) in width. The single-gang trim plate is larger, measuring 5.25\" (13.3 cm) in height and 4.58\" (11.6 cm) in width.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140218_p2_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140218/A6V14140218_p2_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:36:24Z"
+  },
+  {
+    "id": "A6V14140220_p2_q0105",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the technical specifications for the Siemens SL2 Series ceiling-mount appliances, what are the three distinct circuit configurations available for connecting chimes and strobes?\nAnswer:",
+    "answer": "The SL2 Series supports a single circuit for chimes only, a single circuit where the chime and strobe activate in unison, and two independent circuits for separate chime and strobe",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p2_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det17.png"
+      },
+      {
+        "image_filename": "A6V14140220_p2_det19.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det19.png"
+      },
+      {
+        "image_filename": "A6V14140220_p2_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det5.png"
+      },
+      {
+        "image_filename": "A6V14140220_p2_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:37:28Z"
+  },
+  {
+    "id": "A6V14140220_p2_q0106",
+    "pdf_name": "A6V14140220.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V14140220.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the physical dimensions and mounting documentation for the Siemens SL2CHSC chime-strobe, what specific hardware is required to secure the device during a flush mount installation versus a surface mount installation?\nAnswer:",
+    "answer": "For a flush mount installation into a DBB or 4\" square box, two #8-32 screws are required, whereas a surface mount installation using an SLSPBBC backbox requires two #8 thread cutting screws.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V14140220_p2_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V14140220/A6V14140220_p2_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:38:08Z"
+  },
+  {
+    "id": "A6V15441859_p2_q0107",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Which specific models within the Siemens QMX6 product family are equipped with both an integrated CO2 sensor and a visual air quality indicator?\nAnswer:",
+    "answer": "Models QMX6.P70 and QMX6.P74 are the only variants in the series that include both the CO2 sensor and the air quality indicator features1.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:39:20Z"
+  },
+  {
+    "id": "A6V15441859_p10_q0108",
+    "pdf_name": "A6V15441859.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V15441859.pdf",
+    "page": 10,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: What are the different visual symbols used on the Siemens QMX6 user interface to indicate whether the air quality is bad, fair, or good?\nAnswer:",
+    "answer": "The Siemens QMX6 air quality indicator uses sun icons with three distinct colors to represent bad, fair, and good air quality. These LED colors are red, orange, and green respectively.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V15441859_p10_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V15441859/A6V15441859_p10_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:41:42Z"
+  },
+  {
+    "id": "A6V112487691_p4_q0109",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 4,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: What are the required switch positions for a Siemens SL2 multi-tone horn to produce a Code 3 Tone alarm pattern?\nAnswer:",
+    "answer": "To produce a Code 3 Tone (500 Hz ANSI S3.41 temporal pattern), switch SW1 must have POS 2 set to 0, POS 3 set to 1, and POS 4 set to 1.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p4_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:52:22Z"
+  },
+  {
+    "id": "A6V112487691_p4_q0110",
+    "pdf_name": "A6V112487691.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/A6V112487691.pdf",
+    "page": 4,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the technical documents for the Siemens SL2 weatherproof series, what is the maximum depth measurement for a Type 4X surface mount device compared to a Type 3R flush mount device?\nAnswer:",
+    "answer": "The maximum depth for a Type 4X surface mount device is 4.25 inches, while the depth for a Type 3R flush mount device is significantly shallower at 1.75 inches.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "A6V112487691_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/A6V112487691/A6V112487691_p4_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:53:18Z"
+  },
+  {
+    "id": "colorimeter_p2_q0111",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the measured light source intensity distribution for the Konica Minolta FD-7, how does the relative intensity of the D65 illuminant change as the wavelength increases from 300 nm to 440 nm?\nAnswer:",
+    "answer": "The relative intensity of the D65 illuminant increases steadily from approximately 0 at 300 nm to a peak of roughly 0.8 at 410 nm, before showing a slight dip and then rising again toward 1.0 at 440 nm.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p2_det11.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p2_det11.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:57:02Z"
+  },
+  {
+    "id": "colorimeter_p3_q0112",
+    "pdf_name": "colorimeter.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/colorimeter.pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the provided system diagram and technical specifications for the Konica Minolta FD-7, which optional accessory is designed for the automatic positioning and measurement of large color charts up to 320 x 460 mm?\nAnswer:",
+    "answer": "The ColorScoutA3+ is the optional XY automatic color-measurement stage used to automate the measurement of large-format color charts.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "colorimeter_p3_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/colorimeter/colorimeter_p3_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-13T00:57:47Z"
+  },
+  {
+    "id": "DESIGOpx_p2_q0113",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: In the DESIGO PX system topology, which communication protocols are used to connect the PXR controller to the primary plant level and the room-level devices respectively?\nAnswer:",
+    "answer": "The PXR controller connects to the primary plant level using the BACnet/LON protocol and to room-level devices, such as RXC controllers, via the LONWORKS protocol.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p2_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:03:30Z"
+  },
+  {
+    "id": "DESIGOpx_p4_q0114",
+    "pdf_name": "DESIGOpx.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/DESIGOpx.pdf",
+    "page": 4,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: What specific hardware condition is indicated if the red STATUS LED on the DESIGO PX PXR system controller remains continuously on, and what is the required corrective action stated in the manual?\nAnswer:",
+    "answer": "A continuously on red STATUS LED indicates that a hardware fault was detected during the self-test, and the manual states that the PXR must be replaced.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "DESIGOpx_p4_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p4_det1.png"
+      },
+      {
+        "image_filename": "DESIGOpx_p4_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p4_det3.png"
+      },
+      {
+        "image_filename": "DESIGOpx_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/DESIGOpx/DESIGOpx_p4_det4.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:04:54Z"
+  },
+  {
+    "id": "Gigaset_p3_q0115",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the connection overview diagram for the Gigaset C470 IP, what are the three specific connections required at the rear and side of the base station to enable full functionality?\nAnswer:",
+    "answer": "The base station must be connected to the fixed line network via a phone cord (socket A), the mains power supply via a power lead (socket B), and a router via an Ethernet LAN cable (side socket).",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p3_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det1.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det2.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det28.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det28.png"
+      },
+      {
+        "image_filename": "Gigaset_p3_det42.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p3_det42.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:06:42Z"
+  },
+  {
+    "id": "Gigaset_p4_q0116",
+    "pdf_name": "Gigaset.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/Gigaset.pdf",
+    "page": 4,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the \"Keys and functions on the handset\" specifications and the setup instructions, which specific key on the Gigaset C470 IP handset flashes to indicate a new message or call, and what is its primary use during the VoIP configuration process?\nAnswer:",
+    "answer": "The message key flashes to indicate new messages or calls and must be pressed to start the connection assistant for entering VoIP access data once the handset is sufficiently charged.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "Gigaset_p4_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/Gigaset/Gigaset_p4_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:08:57Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p7_q0117",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 7,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: For the SITRANS LR120, what are the specific wire color assignments and power requirements for the Modbus RTU communication variant?\nAnswer:",
+    "answer": "The SITRANS LR120 Modbus variant uses brown and blue for power supply, and black (+) and white (-) for Modbus data, requiring a voltage of 8 to 30 V DC. It operates with a current of 30 mA at 8 V DC or 17 mA at 30 V DC.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p7_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p7_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:10:56Z"
+  },
+  {
+    "id": "sitransl_lr120_fi01_en_p5_q0118",
+    "pdf_name": "sitransl_lr120_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_lr120_fi01_en.pdf",
+    "page": 5,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the polypropylene adapter flange specifications, what are the maximum and minimum Bolt Circle Diameter (B.C.D.) specifications for a SITRANS LR120 4\"/DN100 size flange?\nAnswer:",
+    "answer": "The SITRANS LR120 4\"/DN100 adapter flange has a maximum B.C.D. of 191 mm and a minimum B.C.D. of 175 mm for its eight slotted holes.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p5_det0.png"
+      },
+      {
+        "image_filename": "sitransl_lr120_fi01_en_p5_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_lr120_fi01_en/sitransl_lr120_fi01_en_p5_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:12:13Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p2_q0119",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: What installation practices must be followed to ensure the SITRANS Probe LU240 acoustic beam has a clear path to the material surface?\nAnswer:",
+    "answer": "The SITRANS Probe LU240 must be mounted vertically and positioned away from the vessel walls to avoid internal rungs, pipes, and seams, as well as the path of the incoming material stream.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p2_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:14:05Z"
+  },
+  {
+    "id": "sitransl_probe_lu240_fi01_en_p7_q0120",
+    "pdf_name": "sitransl_probe_lu240_fi01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitransl_probe_lu240_fi01_en.pdf",
+    "page": 7,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: How do the physical dimensions of the SITRANS Probe LU240 change when adding optional hardware like the Bluetooth adapter and the flange adapter?\nAnswer:",
+    "answer": "The SITRANS Probe LU240 reaches a total height of 231.4 mm with the Bluetooth adapter, which also extends the enclosure width by 51 mm, while the optional flange adapter provides a mounting base 190 mm wide.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitransl_probe_lu240_fi01_en_p7_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitransl_probe_lu240_fi01_en/sitransl_probe_lu240_fi01_en_p7_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:14:32Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p3_q0121",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: How are the various measurement parameters, such as gas concentration and transmission percentages, visually organized and presented on the SITRANS TDL local human machine interface?\nAnswer:",
+    "answer": "The SITRANS TDL HMI organizes data into specific views including a single-value display, an alarm view, a six-value overview, and a combined view showing one value alongside a graphical trend diagram. These screens allow operators to simultaneously monitor the measurement results, device status, and historical data trends.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p3_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p3_det1.png"
+      },
+      {
+        "image_filename": "sitranstdl_ap01_en_p3_det10.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p3_det10.png"
+      },
+      {
+        "image_filename": "sitranstdl_ap01_en_p3_det15.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p3_det15.png"
+      },
+      {
+        "image_filename": "sitranstdl_ap01_en_p3_det2.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p3_det2.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:17:21Z"
+  },
+  {
+    "id": "sitranstdl_ap01_en_p4_q0122",
+    "pdf_name": "sitranstdl_ap01_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/sitranstdl_ap01_en.pdf",
+    "page": 4,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the purging diagrams for the SITRANS TDL, which specific locations on the sensor head are designated for purging gas input versus purging gas output?\nAnswer:",
+    "answer": "The purging gas input for the SITRANS TDL is located on the bottom of the sensor side and at the process flange, while the output for purging on the sensor side is located on the top of the housing. The gas is injected into the process interface and enters the process via the purging tube to prevent condensation or dust deposits.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "sitranstdl_ap01_en_p4_det4.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p4_det4.png"
+      },
+      {
+        "image_filename": "sitranstdl_ap01_en_p4_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/sitranstdl_ap01_en/sitranstdl_ap01_en_p4_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:18:10Z"
+  },
+  {
+    "id": "surge_protector_p8_q0123",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 8,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the installation wiring for the Siemens TPS3 11, how does the physical wiring configuration for a WYE system differ from that of a DELTA & HRG WYE system regarding the neutral and ground connections?\nAnswer:",
+    "answer": "In a WYE system, the Siemens TPS3 11 is connected to three hot wires, one neutral wire (N), and one ground wire (G). Conversely, a DELTA & HRG WYE configuration uses three hot wires and one ground wire (G), but does not utilize a neutral connection.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p8_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det5.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det0.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det1.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det6.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det8.png"
+      },
+      {
+        "image_filename": "surge_protector_p8_det9.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p8_det9.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:22:51Z"
+  },
+  {
+    "id": "surge_protector_p6_q0124",
+    "pdf_name": "surge_protector.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/surge_protector.pdf",
+    "page": 6,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the optional flush mount installation diagrams for the Siemens TPS3 11, what are the required height and width dimensions for the wall cutout, and what is the minimum clearance depth needed for the unit?\nAnswer:",
+    "answer": "The wall cutout for a Siemens TPS3 11 must be approximately 6\\ 3/4\" tall by 6\\ 1/16\" wide. Additionally, the wall cavity must provide at least 3.75\" of clearance depth to accommodate the unit's 4.0\" deep chassis.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "surge_protector_p6_det10.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/surge_protector/surge_protector_p6_det10.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:23:53Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p3_q0125",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the flow characteristic for the Siemens SQD65 electromotoric actuator, how does repositioning the S1 connector on the printed circuit board specifically alter the relationship between the positioning signal and volumetric flow rate?\nAnswer:",
+    "answer": "Repositioning the S1 connector changes the flow characteristic from an equal-percentage curve (log) when connected to pins A and C to a linear curve (lin) when connected to pins B and C2. This adjustment determines whether the volumetric flow rate increases proportionally or exponentially relative to the DC 0...10 V or 0...1000 Omega positioning signal.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det0.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det25.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det25.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det18.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det18.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p3_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p3_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:25:40Z"
+  },
+  {
+    "id": "user-manual-4019_(manymanuals.com)_p7_q0126",
+    "pdf_name": "user-manual-4019_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-4019_(manymanuals.com).pdf",
+    "page": 7,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: For the Siemens SQD35.00, SQD85.03, and SQD65 actuators, what are the specific minimum clearance requirements for mounting and service compared to the total height of the unit after fitting it to a valve?\nAnswer:",
+    "answer": "The Siemens SQD actuators have a total height of 111 mm after being fitted to a valve, but they require a minimum clearance of > 100 mm from walls or ceilings and > 200 mm for mounting, connection, operation, and service. Other key dimensions include a housing width of 128 mm and a depth of 80 mm.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p7_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p7_det0.png"
+      },
+      {
+        "image_filename": "user-manual-4019_(manymanuals.com)_p7_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-4019_(manymanuals.com)/user-manual-4019_(manymanuals.com)_p7_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:26:33Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p3_q0127",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the mechanical design diagrams for the Desigo PX system controllers, which numbered interface components are unique to the PXC001-E.D variant compared to the PXC001.D?\nAnswer:",
+    "answer": "The PXC001-E.D system controller specifically features a network interface RJ45 for BACnet/IP at position 5 and an HMI interface at position 9, whereas the PXC001.D utilizes those positions for a LONWORKS plug-in screw terminal block and a different RJ45 interface for operator units and tools.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p3_det12.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p3_det12.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:28:09Z"
+  },
+  {
+    "id": "user-manual-13208_(manymanuals.com)_p10_q0128",
+    "pdf_name": "user-manual-13208_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-13208_(manymanuals.com).pdf",
+    "page": 10,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the dimensions for the Desigo PX system controllers, what are the maximum horizontal width and vertical height of the device when mounted on a DIN rail?\nAnswer:",
+    "answer": "The Desigo PX system controller has a maximum horizontal width of 271.5 mm and a vertical height of 149.4 mm. When considering the mounting rail, the distance between the top and bottom mounting sliders is 133.5 mm.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-13208_(manymanuals.com)_p10_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-13208_(manymanuals.com)/user-manual-13208_(manymanuals.com)_p10_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:28:46Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p5_q0129",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: In the SiPass standalone access control system, how do the visual designs of the \"Add Master\" and \"Void Master\" proximity cards differ, and what specific administrative functions does each master badge perform?\nAnswer:",
+    "answer": "The \"Add Master\" card features a yellow badge icon with a plus sign, while the \"Void Master\" has a yellow badge icon with a minus sign. Functionally, the Add Master is used to introduce new user badges into the system memory, whereas the Void Master is used to delete or deny access to existing badges.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p5_det11.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p5_det11.png"
+      },
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p5_det12.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p5_det12.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:29:57Z"
+  },
+  {
+    "id": "user-manual-16588_(manymanuals.com)_p7_q0130",
+    "pdf_name": "user-manual-16588_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-16588_(manymanuals.com).pdf",
+    "page": 7,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the LED indicators for the SiPass standalone reader, which specific light colors and symbol patterns represent the \"Night lock\" status versus the \"Program\" mode during operation?\nAnswer:",
+    "answer": "The \"Night lock\" status is indicated by a red LED associated with a crescent moon symbol, while the \"Program\" mode is indicated by a red LED next to a square icon containing the letter \"P\". Both indicators are part of a vertical array on the reader face used to provide visual feedback during configuration and access events.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-16588_(manymanuals.com)_p7_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-16588_(manymanuals.com)/user-manual-16588_(manymanuals.com)_p7_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:30:32Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p2_q0131",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: In the AT18 comfort lift door controller, how should the wiring be configured for the X6 input signals connector if a light barrier is not being used?\nAnswer:",
+    "answer": "If a light barrier is not used, terminal 6 of the X6 connector must be wired to terminal 2 of the X4 output connector, while terminal 5 of X6 is wired to terminal 1 of X4.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p2_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p2_det3.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:32:47Z"
+  },
+  {
+    "id": "user-manual-17028_(manymanuals.com)_p6_q0132",
+    "pdf_name": "user-manual-17028_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-17028_(manymanuals.com).pdf",
+    "page": 6,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the user terminal menu structure for the SIEMENS AT18, what specific sub-menu options are available under the \"Monitor\" main menu category?\nAnswer:",
+    "answer": "The sub-menu options under the \"Monitor\" main menu include \"Door status\", \"Input signals\", and \"Output signals\".",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-17028_(manymanuals.com)_p6_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-17028_(manymanuals.com)/user-manual-17028_(manymanuals.com)_p6_det0.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:33:17Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p5_q0133",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 5,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Compare the specific horizontal and vertical spindle offset dimensions for the LAGUN GCM Hure Head and the New Hure Head configurations as shown in the milling head diagrams.\nAnswer:",
+    "answer": "The standard Hure Head has a horizontal offset of 533 mm and a vertical offset of 290 mm, while the New Hure Head increases the horizontal offset to 577 mm and decreases the vertical offset to 278 mm.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det0.png"
+      },
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det5.png"
+      },
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p5_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p5_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:35:44Z"
+  },
+  {
+    "id": "user-manual-26104_(manymanuals.com)_p17_q0134",
+    "pdf_name": "user-manual-26104_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-26104_(manymanuals.com).pdf",
+    "page": 17,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: According to the power and torque characteristic for the LAGUN GCM main motor, what is the operational behavior of the system once the rotational speed exceeds 250 rpm?\nAnswer:",
+    "answer": "Beyond 250 rpm, the LAGUN GCM motor operates in a constant power zone of 28/34.5 kW where the available power remains stable while torque decreases as speed increases.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-26104_(manymanuals.com)_p17_det17.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-26104_(manymanuals.com)/user-manual-26104_(manymanuals.com)_p17_det17.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:36:22Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p21_q0135",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 21,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the jumper setting diagrams for the SIMATIC 505 High Speed Counter, what are the specific positions required to configure a channel for a slow (SLW) reset filter versus an unfiltered (FST) reset?\nAnswer:",
+    "answer": "To select the slow (filtered) reset filter for a channel, the jumper must be placed in the \"SLW\" position, while the \"FST\" position is used to select the fast (unfiltered) reset response. These jumpers are located on the printed circuit board as part of the initial module configuration process.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p21_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p21_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:37:21Z"
+  },
+  {
+    "id": "user-manual-47808_(manymanuals.com)_p16_q0136",
+    "pdf_name": "user-manual-47808_(manymanuals.com).pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/user-manual-47808_(manymanuals.com).pdf",
+    "page": 16,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: How does the count value of the SIMATIC 505 High Speed Counter change in response to the rising and falling edges of Input A and Input B when the module is specifically set to 4X Quadrature mode?\nAnswer:",
+    "answer": "In 4X Quadrature mode, the module increments the count on every rising and falling edge of both input A and input B when A leads B. Conversely, it decrements the count on every rising and falling edge of both inputs when input B leads input A.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "user-manual-47808_(manymanuals.com)_p16_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/user-manual-47808_(manymanuals.com)/user-manual-47808_(manymanuals.com)_p16_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:37:49Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p9_q0137",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 9,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: How does the site altitude influence the required dielectric strength of a Siemens 3AH5 vacuum circuit-breaker, and what specific correction must be applied to the lightning impulse withstand voltage if the installation occurs at 2500 m?\nAnswer:",
+    "answer": "The dielectric strength of air insulation decreases as the site altitude increases due to lower air density. For an installation at 2500 m, a Siemens 3AH5 vacuum circuit-breaker requires a lightning impulse withstand voltage of 90 kV under reference atmosphere to achieve a requested 75 kV level, calculated using an altitude correction factor (Ka) of 1.2",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p9_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p9_det7.png"
+      },
+      {
+        "image_filename": "vacuum_circuitbreaker_p9_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p9_det5.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:42:51Z"
+  },
+  {
+    "id": "vacuum_circuitbreaker_p7_q0138",
+    "pdf_name": "vacuum_circuitbreaker.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/vacuum_circuitbreaker.pdf",
+    "page": 7,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: How is the switching movement physically transferred from the operating mechanism box to the pole assemblies in a Siemens 3AH5 vacuum circuit-breaker according to the structural layout?\nAnswer:",
+    "answer": "In the Siemens 3AH5 vacuum circuit-breaker, the switching movement is transferred from the operating mechanism box to the pole assemblies by means of operating rods and levers. These pole assemblies are physically secured to the mechanism box through the use of post insulators.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "vacuum_circuitbreaker_p7_det8.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p7_det8.png"
+      },
+      {
+        "image_filename": "vacuum_circuitbreaker_p7_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/vacuum_circuitbreaker/vacuum_circuitbreaker_p7_det6.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:45:13Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p3_q0139",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 3,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: Based on the dimensional drawings for the SIWAREX WL250 ST-S SA load cell, what are the exact measurements for the height (H) and width (L) when the equipment is configured for a rated load of 10 t?\nAnswer:",
+    "answer": "For a rated load of 10 t, the SIWAREX WL250 ST-S SA load cell has a height (H) of 177.8 mm (7.00 inches) and a width (L) of 112.78 mm (4.44 inches).",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det3.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det3.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det5.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det5.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det6.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det6.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p3_det7.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p3_det7.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:46:33Z"
+  },
+  {
+    "id": "WL250_ST-S_SA_wt10_en_p2_q0140",
+    "pdf_name": "WL250_ST-S_SA_wt10_en.pdf",
+    "pdf_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/WL250_ST-S_SA_wt10_en.pdf",
+    "page": 2,
+    "question": "The following is an open-ended question about an industrial device. Answer concisely using only factual information extracted from the document. Limit your answer to 1–2 sentences.\n\nQuestion: In the cable connection layout for the SIWAREX WL250 ST-S SA load cell, how are the positive and negative supply and signal leads identified by their respective wire colors?\nAnswer:",
+    "answer": "The positive supply (EXC+) is identified as red and the negative supply (EXC-) is black, while the positive measured signal (SIG+) is green and the negative signal (SIG-) is white.",
+    "question_type": "free_form",
+    "structured_metadata": {
+      "type": "free_form",
+      "notes": "No additional structured metadata required."
+    },
+    "ground_truth_images": [
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det0.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det0.png"
+      },
+      {
+        "image_filename": "WL250_ST-S_SA_wt10_en_p2_det1.png",
+        "image_path": "/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images/WL250_ST-S_SA_wt10_en/WL250_ST-S_SA_wt10_en_p2_det1.png"
+      }
+    ],
+    "timestamp": "2026-01-13T01:47:16Z"
+  }
+]

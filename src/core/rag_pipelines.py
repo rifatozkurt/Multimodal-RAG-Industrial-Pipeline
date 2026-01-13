@@ -501,7 +501,6 @@ class AdvancedMultimodalRAG:
             "retrieved_image_docs": image_docs,
             "sources_text": sources_text,
             "sources_image": sources_image,
-            "message_history": self.message_history,
         }
 
         self.message_history.append(result)

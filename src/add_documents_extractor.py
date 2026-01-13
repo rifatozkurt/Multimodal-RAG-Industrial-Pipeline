@@ -1,6 +1,7 @@
 import os
 from tqdm import tqdm
 from langchain_community.document_loaders import PyMuPDFLoader, DirectoryLoader
+from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from core.config import (
@@ -14,6 +15,18 @@ from core.config import (
 from core.data_loaders import PdfExtractionLoader, chunk_documents
 from core.embedders import EmbeddingManager, EmbeddingManager_Image
 from core.vectordb import VectorDBManager
+
+
+def build_image_page_text_docs(image_docs):
+    page_text_docs = []
+    for doc in image_docs:
+        page_text = doc.metadata.get("page_text", "").strip()
+        if not page_text:
+            continue
+        metadata = dict(doc.metadata)
+        metadata["image_page_text"] = True
+        page_text_docs.append(Document(page_content=page_text, metadata=metadata))
+    return page_text_docs
 
 
 def main():
@@ -107,6 +120,10 @@ def main():
 
     embeddings_pdf = embedding_manager_txt.create_embeddings(chunks_pdf)
     embeddings_pdf_images = embedding_manager_images.embed_images(pdf_image_paths)
+    image_page_text_docs = build_image_page_text_docs(documents_pdf_imgs)
+    embeddings_image_page_texts = (
+        embedding_manager_txt.create_embeddings(image_page_text_docs) if image_page_text_docs else []
+    )
 
     print(
         "Text embeddings:",
@@ -143,6 +160,16 @@ def main():
     vector_db_manager_pdf_images.add_documents(
         documents=documents_pdf_imgs,
         embeddings=embeddings_pdf_images,
+    )
+
+    vector_db_manager_image_page_texts = VectorDBManager(
+        collection_name="pdf_image_page_texts_db",
+        directory=os.path.join(vectordb_path, "pdf_image_page_texts_db/"),
+        source_type="pdf_image_page_texts",
+    )
+    vector_db_manager_image_page_texts.add_documents(
+        documents=image_page_text_docs,
+        embeddings=embeddings_image_page_texts,
     )
 
 

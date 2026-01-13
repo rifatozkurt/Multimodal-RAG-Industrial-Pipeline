@@ -5,10 +5,12 @@ Simple PDF QA annotation tool for multimodal RAG datasets.
 Features
 --------
 - Input a directory path containing PDFs.
+- Input a directory path containing extracted images.
 - Dropdown with all detected PDFs.
 - Page slider + preview:
     * Renders PDF page as an image (via PyMuPDF).
     * Shows extracted page text.
+- Image gallery + checkbox selection for ground-truth images on the selected page.
 - Question authoring:
     * Question text
     * Ground-truth answer
@@ -219,14 +221,43 @@ def on_scan_pdfs(pdf_dir: str) -> Tuple[gr.Dropdown, str, str, Dict[str, str]]:
     return gr.Dropdown(choices=choices, value=choices[0]), info, pdf_dir, pdf_map
 
 
+def list_images_for_page(images_dir: str, pdf_name: str, page_number: int) -> Tuple[List[str], List[str]]:
+    if not images_dir or not pdf_name:
+        return [], []
+    images_dir = images_dir.strip()
+    if not os.path.isdir(images_dir):
+        return [], []
+    pdf_stem = os.path.splitext(pdf_name)[0]
+    pdf_images_dir = os.path.join(images_dir, pdf_stem)
+    if not os.path.isdir(pdf_images_dir):
+        return [], []
+    page_tag = f"_p{page_number}_"
+    image_names = []
+    image_paths = []
+    for fname in sorted(os.listdir(pdf_images_dir)):
+        lower = fname.lower()
+        if page_tag in fname and lower.endswith((".png", ".jpg", ".jpeg", ".webp")):
+            image_names.append(fname)
+            image_paths.append(os.path.join(pdf_images_dir, fname))
+    return image_paths, image_names
+
+
 def on_select_pdf(pdf_dir: str,
                   pdf_map: Dict[str, str],
-                  pdf_name: str) -> Tuple[Optional[Image.Image], str, gr.Slider, str]:
+                  pdf_name: str,
+                  images_dir: str) -> Tuple[Optional[Image.Image], str, gr.Slider, str, List[str], gr.CheckboxGroup]:
     """
     When a PDF is selected (or reselected), load page 1 and update page slider.
     """
     if not pdf_name or not pdf_map or pdf_name not in pdf_map:
-        return None, "", gr.Slider(minimum=1, maximum=1, value=1, step=1), "⚠️ No PDF selected."
+        return (
+            None,
+            "",
+            gr.Slider(minimum=1, maximum=1, value=1, step=1),
+            "⚠️ No PDF selected.",
+            [],
+            gr.CheckboxGroup(choices=[], value=[]),
+        )
 
     pdf_path = pdf_map[pdf_name]
     image, text, total_pages, info = render_pdf_page(pdf_path, page_number=1)
@@ -236,22 +267,32 @@ def on_select_pdf(pdf_dir: str,
     else:
         slider = gr.Slider(minimum=1, maximum=total_pages, value=1, step=1)
 
-    return image, text, slider, info
+    image_paths, image_names = list_images_for_page(images_dir, pdf_name, 1)
+    return (
+        image,
+        text,
+        slider,
+        info,
+        image_paths,
+        gr.CheckboxGroup(choices=image_names, value=[]),
+    )
 
 
 def on_change_page(pdf_dir: str,
                    pdf_map: Dict[str, str],
                    pdf_name: str,
-                   page_number: int) -> Tuple[Optional[Image.Image], str, str]:
+                   page_number: int,
+                   images_dir: str) -> Tuple[Optional[Image.Image], str, str, List[str], gr.CheckboxGroup]:
     """
     When the page slider changes, re-render the page.
     """
     if not pdf_name or not pdf_map or pdf_name not in pdf_map:
-        return None, "", "⚠️ No PDF selected."
+        return None, "", "⚠️ No PDF selected.", [], gr.CheckboxGroup(choices=[], value=[])
 
     pdf_path = pdf_map[pdf_name]
     image, text, total_pages, info = render_pdf_page(pdf_path, page_number=int(page_number))
-    return image, text, info
+    image_paths, image_names = list_images_for_page(images_dir, pdf_name, int(page_number))
+    return image, text, info, image_paths, gr.CheckboxGroup(choices=image_names, value=[])
 
 
 def on_change_qtype(qtype: str) -> str:
@@ -269,7 +310,9 @@ def on_add_question(pdf_dir: str,
                     answer: str,
                     qtype: str,
                     structured_meta: str,
-                    json_path: str) -> str:
+                    json_path: str,
+                    images_dir: str,
+                    selected_images: List[str]) -> str:
     """
     Add a new question to the JSON dataset.
     """
@@ -308,6 +351,16 @@ def on_add_question(pdf_dir: str,
 
     entry_id = generate_entry_id(pdf_name, page_number, len(entries))
 
+    ground_truth_images = []
+    if selected_images:
+        pdf_stem = os.path.splitext(pdf_name)[0]
+        for fname in selected_images:
+            full_path = os.path.join(images_dir, pdf_stem, fname) if images_dir else fname
+            ground_truth_images.append({
+                "image_filename": fname,
+                "image_path": full_path,
+            })
+
     entry = {
         "id": entry_id,
         "pdf_name": pdf_name,
@@ -317,6 +370,7 @@ def on_add_question(pdf_dir: str,
         "answer": answer.strip(),
         "question_type": qtype,
         "structured_metadata": structured_obj,
+        "ground_truth_images": ground_truth_images,
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     }
 
@@ -359,9 +413,15 @@ def build_interface():
 
         with gr.Row():
             pdf_dir_input = gr.Textbox(
-                value = r"C:\Users\rozku\Desktop\Research_Internship\Project\siemens_test\pdfs",
+                value = r"/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs",
                 label="PDF Directory",
                 placeholder="Enter path to directory with PDFs, e.g. ./pdfs",
+                lines=1,
+            )
+            images_dir_input = gr.Textbox(
+                value = r"/rifat/Multimodal-RAG-Industrial-Pipeline/documents/pdfs/extracted_images",
+                label="Extracted Images Directory",
+                placeholder="Enter path to directory with extracted images",
                 lines=1,
             )
             scan_button = gr.Button("🔍 Scan PDFs", variant="primary")
@@ -428,6 +488,23 @@ def build_interface():
             value=structured_template_for_type("free_form"),
         )
 
+        gr.Markdown("---")
+        gr.Markdown("## 🖼️ Ground-Truth Image Selection")
+        with gr.Row():
+            image_gallery = gr.Gallery(
+                label="Images for Selected Page",
+                columns=4,
+                rows=2,
+                height=300,
+                object_fit="contain",
+            )
+        with gr.Row():
+            image_selector = gr.CheckboxGroup(
+                label="Select Ground-Truth Images (filenames)",
+                choices=[],
+                value=[],
+            )
+
         with gr.Row():
             json_path_box = gr.Textbox(
                 label="Output JSON File",
@@ -453,15 +530,15 @@ def build_interface():
         # When PDF is selected, load first page
         pdf_dropdown.change(
             fn=on_select_pdf,
-            inputs=[pdf_dir_state, pdf_map_state, pdf_dropdown],
-            outputs=[page_image, page_text, page_slider, page_info],
+            inputs=[pdf_dir_state, pdf_map_state, pdf_dropdown, images_dir_input],
+            outputs=[page_image, page_text, page_slider, page_info, image_gallery, image_selector],
         )
 
         # When page slider changes, update page preview
         page_slider.change(
             fn=on_change_page,
-            inputs=[pdf_dir_state, pdf_map_state, pdf_dropdown, page_slider],
-            outputs=[page_image, page_text, page_info],
+            inputs=[pdf_dir_state, pdf_map_state, pdf_dropdown, page_slider, images_dir_input],
+            outputs=[page_image, page_text, page_info, image_gallery, image_selector],
         )
 
         # When question type changes, update template
@@ -484,6 +561,8 @@ def build_interface():
                 qtype_dropdown,
                 structured_meta_box,
                 json_path_box,
+                images_dir_input,
+                image_selector,
             ],
             outputs=[status_box],
         )

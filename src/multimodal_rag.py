@@ -12,11 +12,11 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 selected_model = "Qwen/Qwen3-VL-8B-Instruct"  # options: "Qwen/Qwen3-VL-8B-Instruct", "llava-hf/llava-v1.6-mistral-7b-hf"
 
-query = "how does the error of localization change through time for a uav flying in a gps denied environment?"
+query = "The following is a question about an industrial device. Give only the letter choice in your answer.\n\nQuestion: In an SR latch built from NOR gates, which condition is not allowed\nA.S=0, R=0\nB.S=0, R=1\nC.S=1, R=0\nD.S=1, R=1\nAnswer:"
 
 preprocess_type = None   # or None / "chain_of_thought"
 summarize = False
-image_query_captioning = True
+image_query_captioning = False
 max_new_tokens = 256
 
 #-----------------------------------------------------------------------

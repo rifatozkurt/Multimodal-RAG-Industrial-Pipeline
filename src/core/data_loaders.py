@@ -36,6 +36,9 @@ class PdfExtractionLoader:
         score_threshold: float = 0.0,
         layout_filename: str = "layout_results.json",
         image_zoom: float = 3.0,  # controls output resolution
+        min_image_width: int = 50,    # skip images smaller than this width
+        min_image_height: int = 50,   # skip images smaller than this height
+        min_image_area: int = 2500,   # skip images smaller than this area (width * height)
     ) -> None:
         self.pdfs_dir = Path(pdfs_dir)
         self.layout_root_dir = Path(layout_root_dir)
@@ -43,6 +46,9 @@ class PdfExtractionLoader:
         self.score_threshold = score_threshold
         self.layout_filename = layout_filename
         self.image_zoom = image_zoom
+        self.min_image_width = min_image_width
+        self.min_image_height = min_image_height
+        self.min_image_area = min_image_area
 
         # Default category hints if none provided
         self.text_categories = (
@@ -74,9 +80,6 @@ class PdfExtractionLoader:
             else image_categories
         )
 
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
     def load(self) -> Tuple[List[Document], List[Document]]:
         text_docs: List[Document] = []
         image_docs: List[Document] = []
@@ -131,9 +134,6 @@ class PdfExtractionLoader:
         logger.info("Loaded %d layout-image documents from PDFs.", len(image_docs))
         return text_docs, image_docs
 
-    # ------------------------------------------------------------------
-    # Internal helpers
-    # ------------------------------------------------------------------
     def _find_layout_json(self, pdf_stem: str) -> Optional[Path]:
         candidate = self.layout_root_dir / pdf_stem / self.layout_filename
         return candidate if candidate.is_file() else None
@@ -253,9 +253,7 @@ class PdfExtractionLoader:
 
         return text_docs, image_docs
 
-    # ------------------------------------------------------------------
-    # Category helpers
-    # ------------------------------------------------------------------
+
     def _is_text_category(self, lower_cat: str) -> bool:
         if "caption" in lower_cat:
             return True
@@ -266,9 +264,7 @@ class PdfExtractionLoader:
             return False
         return any(token in lower_cat for token in self.image_categories)
 
-    # ------------------------------------------------------------------
-    # Geometry helpers
-    # ------------------------------------------------------------------
+
     @staticmethod
     def _poly_to_rect(
         poly: Any,
@@ -311,9 +307,7 @@ class PdfExtractionLoader:
 
         return fitz.Rect(x_min, y_min, x_max, y_max)
 
-    # ------------------------------------------------------------------
-    # Document builders
-    # ------------------------------------------------------------------
+
     def _build_text_document(
         self,
         page: fitz.Page,
@@ -408,6 +402,32 @@ class PdfExtractionLoader:
                     det_idx,
                 )
                 return None
+            
+            # Check size thresholds
+            if width < self.min_image_width or height < self.min_image_height:
+                logger.debug(
+                    "Skipping small image crop for '%s' (page %s, det %s): %dx%d < %dx%d",
+                    pdf_name,
+                    page_num,
+                    det_idx,
+                    width,
+                    height,
+                    self.min_image_width,
+                    self.min_image_height,
+                )
+                return None
+            
+            if width * height < self.min_image_area:
+                logger.debug(
+                    "Skipping small area image crop for '%s' (page %s, det %s): area %d < %d",
+                    pdf_name,
+                    page_num,
+                    det_idx,
+                    width * height,
+                    self.min_image_area,
+                )
+                return None
+            
             pix.save(full_path.as_posix())
         except Exception as e:
             logger.error(

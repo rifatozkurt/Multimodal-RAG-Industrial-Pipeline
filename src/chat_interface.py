@@ -364,8 +364,8 @@ def generate_response_with_uploaded_image(
             query_image=query_image_retrieval,
             top_k_text=top_k_text,
             top_k_image=top_k_image,
-            match_threshold_text=-0.5,
-            match_threshold_image=-0.5
+            match_threshold_text=-0,
+            match_threshold_image=-0
         )
     except TypeError as e:
         # Handle case where retriever doesn't support query_image parameter
@@ -374,8 +374,8 @@ def generate_response_with_uploaded_image(
                 query=query_retrieval,
                 top_k_text=top_k_text,
                 top_k_image=top_k_image,
-                match_threshold_text=-0.5,
-                match_threshold_image=-0.5
+                match_threshold_text=-0,
+                match_threshold_image=-0
             )
         else:
             raise
