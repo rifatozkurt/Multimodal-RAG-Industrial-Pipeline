@@ -1,4 +1,6 @@
 import os
+import json
+from pathlib import Path
 from tqdm import tqdm
 from langchain_community.document_loaders import PyMuPDFLoader, DirectoryLoader
 from langchain_core.documents import Document
@@ -13,7 +15,7 @@ from core.config import (
     vectordb_path,
 )
 from core.data_loaders import PdfExtractionLoader, chunk_documents
-from core.embedders import EmbeddingManager, EmbeddingManager_Image
+from core.embedders import EmbeddingManager, EmbeddingManager_Image, EmbeddingManager_Text_CLIP
 from core.vectordb import VectorDBManager
 
 
@@ -27,6 +29,49 @@ def build_image_page_text_docs(image_docs):
         metadata["image_page_text"] = True
         page_text_docs.append(Document(page_content=page_text, metadata=metadata))
     return page_text_docs
+
+
+def _format_caption_tags(caption: str, tags):
+    if isinstance(tags, list):
+        tags_text = "; ".join(str(t).strip() for t in tags if str(t).strip())
+    elif isinstance(tags, str):
+        tags_text = tags.strip()
+    else:
+        tags_text = ""
+    return f"CAPTION: {caption.strip()}\nTAGS: {tags_text}".strip()
+
+
+def load_vlm_caption_docs(captions_path: str, allowed_doc_ids: set[str] | None):
+    if not os.path.exists(captions_path):
+        return []
+    try:
+        data = json.loads(Path(captions_path).read_text())
+    except Exception:
+        return []
+    if not isinstance(data, list):
+        return []
+
+    caption_docs = []
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        doc_id = item.get("document_id")
+        if allowed_doc_ids is not None and doc_id not in allowed_doc_ids:
+            continue
+        model_json = item.get("model_json") or {}
+        caption = model_json.get("caption", "")
+        tags = model_json.get("tags", "")
+        if not caption:
+            continue
+        caption_text = _format_caption_tags(caption, tags)
+        metadata = {
+            "document_id": doc_id,
+            "image_path": item.get("image_path"),
+            "filename": item.get("filename"),
+            "source": "vlm_caption",
+        }
+        caption_docs.append(Document(page_content=caption_text, metadata=metadata))
+    return caption_docs
 
 
 def main():
@@ -88,6 +133,7 @@ def main():
             and doc.metadata["file_path"] not in filenames_to_be_logged
         ):
             filenames_to_be_logged.append(doc.metadata["file_path"])
+    new_doc_ids = {Path(p).name for p in filenames_to_be_logged}
 
     with open(extracted_files_log, "a") as f:
         for filename in filenames_to_be_logged:
@@ -116,13 +162,20 @@ def main():
 
 
     embedding_manager_txt = EmbeddingManager(model_name=embedding_model_name)
+    embedding_manager_txt_clip = EmbeddingManager_Text_CLIP(model_name=image_embedding_model_name)
     embedding_manager_images = EmbeddingManager_Image(model_name=image_embedding_model_name)
 
     embeddings_pdf = embedding_manager_txt.create_embeddings(chunks_pdf)
+    embeddings_pdf_clip = embedding_manager_txt_clip.create_embeddings(chunks_pdf)
     embeddings_pdf_images = embedding_manager_images.embed_images(pdf_image_paths)
     image_page_text_docs = build_image_page_text_docs(documents_pdf_imgs)
     embeddings_image_page_texts = (
         embedding_manager_txt.create_embeddings(image_page_text_docs) if image_page_text_docs else []
+    )
+    captions_path = os.path.join(documents_path, "pdfs/extracted_images/vlm_captions.json")
+    caption_docs = load_vlm_caption_docs(captions_path, new_doc_ids if new_doc_ids else None)
+    embeddings_vlm_captions = (
+        embedding_manager_txt.create_embeddings(caption_docs) if caption_docs else []
     )
 
     print(
@@ -170,6 +223,26 @@ def main():
     vector_db_manager_image_page_texts.add_documents(
         documents=image_page_text_docs,
         embeddings=embeddings_image_page_texts,
+    )
+
+    vector_db_manager_pdf_text_clip = VectorDBManager(
+        collection_name="pdf_text_clip_db",
+        directory=os.path.join(vectordb_path, "pdf_text_clip_db/"),
+        source_type="pdf_text_clip",
+    )
+    vector_db_manager_pdf_text_clip.add_documents(
+        documents=chunks_pdf,
+        embeddings=embeddings_pdf_clip,
+    )
+
+    vector_db_manager_vlm_captions = VectorDBManager(
+        collection_name="pdf_image_vlm_captions",
+        directory=os.path.join(vectordb_path, "pdf_image_vlm_captions_db/"),
+        source_type="pdf_image_vlm_captions",
+    )
+    vector_db_manager_vlm_captions.add_documents(
+        documents=caption_docs,
+        embeddings=embeddings_vlm_captions,
     )
 
 

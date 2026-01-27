@@ -82,3 +82,29 @@ class EmbeddingManager_Image:
             txt_feats = self.model.get_text_features(**inputs)
         txt_feats = txt_feats / txt_feats.norm(dim=-1, keepdim=True)
         return txt_feats.cpu().numpy()
+
+
+class EmbeddingManager_Text_CLIP:
+    def __init__(self, model_name="openai/clip-vit-large-patch14"):
+        self.model_name = model_name
+        self.model = CLIPModel.from_pretrained(model_name)
+        self.processor = CLIPProcessor.from_pretrained(model_name)
+        self.model.eval()
+
+    def create_embeddings(self, documents):
+        if isinstance(documents, str):
+            texts = [documents]
+        else:
+            texts = [doc.page_content for doc in documents]
+
+        inputs = self.processor(
+            text=texts,
+            return_tensors="pt",
+            padding=True,
+            truncation=True,
+            max_length=77,
+        )
+        with torch.no_grad():
+            txt_feats = self.model.get_text_features(**inputs)
+        txt_feats = txt_feats / txt_feats.norm(dim=-1, keepdim=True)
+        return txt_feats.cpu().numpy()

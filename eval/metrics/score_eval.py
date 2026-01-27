@@ -1,3 +1,9 @@
+"""
+    python eval/metrics/score_eval.py \
+  --dataset eval/datasets/dataset_mcq_fib.json \
+  --predictions /rifat/Multimodal-RAG-Industrial-Pipeline/eval/runs/page_text/20260113_051352/predictions.jsonl
+"""
+
 import argparse
 import json
 import sys
@@ -302,7 +308,7 @@ def main() -> None:
                     answer_scores = []
                     query_scores = []
                     for doc_text in doc_texts:
-                        if "open" in question_type:
+                        if "open" in question_type or "free_form" in question_type:
                             score_answer = entailment_score(nli_pipe, doc_text, pred_answer)
                             if score_answer is not None:
                                 answer_scores.append(score_answer)
@@ -348,6 +354,9 @@ def main() -> None:
         f.write(f"Dataset: {summary_out['dataset']}\n")
         f.write(f"Predictions: {summary_out['predictions']}\n")
         f.write(f"Missing predictions: {summary_out['missing_predictions']}\n")
+        f.write("\nMetric definitions:\n")
+        f.write("- nli_answer_*: entailment score with premise = retrieved text chunk, hypothesis = generated answer (open-ended only)\n")
+        f.write("- nli_query_*: entailment score with premise = retrieved text chunk, hypothesis = original query (all questions)\n")
         f.write("\nCounts:\n")
         for key, value in sorted(summary_out["counts"].items()):
             f.write(f"- {key}: {value}\n")

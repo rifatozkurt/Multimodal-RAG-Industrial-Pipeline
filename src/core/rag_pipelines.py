@@ -342,6 +342,7 @@ class AdvancedMultimodalRAG:
         chunk_size=1000,
         summarize=False,
         image_query_captioning=False,
+        filtered_image_retrieval=True,
         device="cuda:0"):
         """
         Main entry point.
@@ -391,7 +392,8 @@ class AdvancedMultimodalRAG:
                 top_k_text=top_k_text,
                 top_k_image=top_k_image,
                 match_threshold_text=match_threshold_text,
-                match_threshold_image=match_threshold_image)
+                match_threshold_image=match_threshold_image,
+                filtered_image_retrieval=filtered_image_retrieval)
         except TypeError as e:
             # Handle case where retriever doesn't support query_image parameter
             if "query_image" in str(e):
