@@ -1,0 +1,19 @@
+{
+  "retriever": "vlm_caption",
+  "merge_type": null,
+  "dataset": "./eval/datasets/dataset_mcq_fib.json",
+  "topk_text": 3,
+  "topk_image": 3,
+  "clip_top_k": 10,
+  "match_threshold_text": -0.5,
+  "match_threshold_image": -0.6,
+  "filtered_image_retrieval": true,
+  "k_list": [
+    1,
+    3,
+    5
+  ],
+  "nli_model": "cross-encoder/nli-deberta-v3-small",
+  "nli_max_text_docs": 6,
+  "limit": null
+}

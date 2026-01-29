@@ -2,10 +2,14 @@
 CUDA_VISIBLE_DEVICES=0 python eval/metrics/run_eval.py \
   --dataset eval/datasets/dataset_mcq_fib.json \
   --run_dir eval/runs/clip_filtered \
-  --image_retrieval_mode clip \
+  --model Qwen/Qwen3-VL-8B-Instruct \
+  --image_retrieval_mode vlm_caption \
+  --filtered_image_retrieval \
+  --merge_type normalized_mean \
   --topk_text 3 --topk_image 3 --max_images 3 \
   --match_threshold_text -0.5 --match_threshold_image -0.6 \
-  --max_new_tokens 64 
+  --max_new_tokens 64
+
 """
 
 
@@ -34,9 +38,10 @@ from core.retrievers import (  # noqa: E402
     RetrieverMultiModal_experimental,
     RetrieverMultiModal_ImagePageText,
     RetrieverMultiModal_ImageVLMCaptions,
+    RetrieverMultiModal_ImageCLIPRepresentations,
 )
 from core.vectordb import VectorDBManager  # noqa: E402
-from core.embedders import EmbeddingManager, EmbeddingManager_Image  # noqa: E402
+from core.embedders import EmbeddingManager, EmbeddingManager_Image, EmbeddingManager_Text_CLIP  # noqa: E402
 from core.config import (  # noqa: E402
     embedding_model_name,
     image_embedding_model_name,
@@ -57,7 +62,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--image_query_captioning", action="store_false", default=True)
     parser.add_argument(
         "--image_retrieval_mode",
-        choices=["clip", "page_text", "vlm_caption"],
+        choices=["clip", "page_text", "vlm_caption", "clip_repr"],
         default="clip",
     )
     parser.add_argument(
@@ -65,6 +70,12 @@ def parse_args() -> argparse.Namespace:
         action=argparse.BooleanOptionalAction,
         default=True,
         help="If true, restrict image retrieval to documents that produced the retrieved text chunks.",
+    )
+    parser.add_argument(
+        "--merge_type",
+        default="normalized_mean",
+        choices=["normalized_mean", "similarity_weighted", "query_interpolation", "pca"],
+        help="Merge strategy for CLIP-representation retrieval (clip_repr mode).",
     )
     parser.add_argument("--topk_text", type=int, default=3)
     parser.add_argument("--topk_image", type=int, default=3)
@@ -147,6 +158,11 @@ def init_rag_pipeline(
         if image_retrieval_mode == "clip"
         else None
     )
+    embedding_manager_text_clip = (
+        EmbeddingManager_Text_CLIP(model_name=image_embedding_model_name)
+        if image_retrieval_mode == "clip_repr"
+        else None
+    )
 
     vector_db_manager_pdf = VectorDBManager(
         collection_name="pdf_documents_db",
@@ -174,6 +190,24 @@ def init_rag_pipeline(
             vector_db_text=vector_db_manager_pdf,
             vector_db_image_captions=vector_db_manager_pdf_images,
             embedding_manager_text=embedding_manager_txt,
+        )
+    elif image_retrieval_mode == "clip_repr":
+        vector_db_manager_pdf_text_clip = VectorDBManager(
+            collection_name="pdf_text_clip_db",
+            directory=os.path.join(vectordb_path, "pdf_text_clip_db/"),
+            source_type="pdf_text_clip",
+        )
+        vector_db_manager_pdf_images = VectorDBManager(
+            collection_name="pdf_image_documents_db",
+            directory=os.path.join(vectordb_path, "pdf_image_db/"),
+            source_type="pdf_image",
+        )
+        retriever_multimodal_image = RetrieverMultiModal_ImageCLIPRepresentations(
+            vector_db_text=vector_db_manager_pdf,
+            vector_db_text_clip=vector_db_manager_pdf_text_clip,
+            vector_db_image=vector_db_manager_pdf_images,
+            embedding_manager_text=embedding_manager_txt,
+            embedding_manager_text_clip=embedding_manager_text_clip,
         )
     else:
         vector_db_manager_pdf_images = VectorDBManager(
@@ -245,6 +279,7 @@ def main() -> None:
         "image_query_captioning": args.image_query_captioning,
         "image_retrieval_mode": args.image_retrieval_mode,
         "filtered_image_retrieval": args.filtered_image_retrieval,
+        "merge_type": args.merge_type,
         "topk_text": args.topk_text,
         "topk_image": args.topk_image,
         "max_images": args.max_images,
@@ -282,6 +317,7 @@ def main() -> None:
                     summarize=args.summarize,
                     image_query_captioning=args.image_query_captioning,
                     filtered_image_retrieval=args.filtered_image_retrieval,
+                    merge_type=args.merge_type,
                     device=device,
                 )
                 pred_answer = result.get("answer", "")

@@ -343,6 +343,7 @@ class AdvancedMultimodalRAG:
         summarize=False,
         image_query_captioning=False,
         filtered_image_retrieval=True,
+        merge_type="normalized_mean",
         device="cuda:0"):
         """
         Main entry point.
@@ -386,25 +387,32 @@ class AdvancedMultimodalRAG:
         
         # 2) retrieval
         try:
-            text_docs, image_docs = self.retriever_multimodal.retrieve(
-                query=query_retrieval,
-                query_image=query_image_retrieval,
-                top_k_text=top_k_text,
-                top_k_image=top_k_image,
-                match_threshold_text=match_threshold_text,
-                match_threshold_image=match_threshold_image,
-                filtered_image_retrieval=filtered_image_retrieval)
-        except TypeError as e:
-            # Handle case where retriever doesn't support query_image parameter
-            if "query_image" in str(e):
-                text_docs, image_docs = self.retriever_multimodal.retrieve(
-                    query=query_retrieval,
-                    top_k_text=top_k_text,
-                    top_k_image=top_k_image,
-                    match_threshold_text=match_threshold_text,
-                    match_threshold_image=match_threshold_image)
-            else:
-                raise
+            retrieve_kwargs = {
+                "query": query_retrieval,
+                "query_image": query_image_retrieval,
+                "top_k_text": top_k_text,
+                "top_k_image": top_k_image,
+                "match_threshold_text": match_threshold_text,
+                "match_threshold_image": match_threshold_image,
+                "filtered_image_retrieval": filtered_image_retrieval,
+                "merge_type": merge_type,
+            }
+            while True:
+                try:
+                    text_docs, image_docs = self.retriever_multimodal.retrieve(**retrieve_kwargs)
+                    break
+                except TypeError as e:
+                    err_msg = str(e)
+                    if "merge_type" in err_msg:
+                        retrieve_kwargs.pop("merge_type", None)
+                        continue
+                    if "filtered_image_retrieval" in err_msg:
+                        retrieve_kwargs.pop("filtered_image_retrieval", None)
+                        continue
+                    if "query_image" in err_msg:
+                        retrieve_kwargs.pop("query_image", None)
+                        continue
+                    raise
         except Exception as exc:
             print("Error during retrieval:", exc)
             raise

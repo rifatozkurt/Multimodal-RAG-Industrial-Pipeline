@@ -1,0 +1,29 @@
+{
+  "dataset": "eval/datasets/dataset_mcq_fib.json",
+  "predictions": "eval/runs/clip_repr_query_interpolation/20260127_071019/predictions.jsonl",
+  "missing_predictions": 0,
+  "counts": {
+    "mcq_count": 60,
+    "image_retrieval_count": 140,
+    "nli_count": 140,
+    "fill_count": 40,
+    "open_count": 40
+  },
+  "metrics": {
+    "mcq_accuracy": 0.7666666666666667,
+    "mcq_parse_fail": 0.0,
+    "image_hit_at_1": 0.10714285714285714,
+    "image_hit_at_3": 0.3,
+    "image_hit_at_5": 0.3,
+    "image_mrr": 0.18928571428571422,
+    "nli_query_max": 0.03475415909072451,
+    "nli_query_mean": 0.01568640300926442,
+    "fill_exact_match": 0.575,
+    "fill_token_f1": 0.6,
+    "rouge1_f1": 0.557326486442068,
+    "rouge2_f1": 0.3099165496135362,
+    "rougeL_f1": 0.4437747347137953,
+    "nli_answer_max": 0.35774331123684533,
+    "nli_answer_mean": 0.16093094758604515
+  }
+}

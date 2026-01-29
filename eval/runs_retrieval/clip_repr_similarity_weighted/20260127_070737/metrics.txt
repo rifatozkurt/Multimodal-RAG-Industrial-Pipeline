@@ -1,0 +1,18 @@
+Dataset: ./eval/datasets/dataset_mcq_fib.json
+Predictions: eval/runs_retrieval/clip_repr_similarity_weighted/20260127_070737/per_item.jsonl
+Missing predictions: 0
+
+Metric definitions:
+- nli_query_*: entailment score with premise = retrieved text chunk, hypothesis = original query (all questions)
+
+Counts:
+- image_retrieval_count: 140
+- nli_count: 140
+
+Metrics:
+- image_hit_at_1: 0.1357142857142857
+- image_hit_at_3: 0.2357142857142857
+- image_hit_at_5: 0.2357142857142857
+- image_mrr: 0.175
+- nli_query_max: 0.03475415909072451
+- nli_query_mean: 0.01568640300926442

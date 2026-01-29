@@ -133,7 +133,7 @@ def main():
             and doc.metadata["file_path"] not in filenames_to_be_logged
         ):
             filenames_to_be_logged.append(doc.metadata["file_path"])
-    new_doc_ids = {Path(p).name for p in filenames_to_be_logged}
+    new_doc_ids = {Path(p).stem for p in filenames_to_be_logged}
 
     with open(extracted_files_log, "a") as f:
         for filename in filenames_to_be_logged:

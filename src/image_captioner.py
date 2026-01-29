@@ -7,6 +7,7 @@ import argparse
 import json
 import time
 from pathlib import Path
+import re
 
 import torch
 from PIL import Image
@@ -72,6 +73,25 @@ def build_qwen_caption_inputs(processor_qwen, image_path: Path):
     )
 
 
+def _extract_caption_tags_from_raw(text: str):
+    text = text.strip()
+    # Try JSON-like caption field (supports multiline and escaped quotes)
+    m = re.search(r'"caption"\s*:\s*"((?:\\\\.|[^"])*)"', text, flags=re.IGNORECASE | re.DOTALL)
+    caption = m.group(1).strip() if m else ""
+    if not caption:
+        m = re.search(r'"caption"\s*:\s*"(.+)$', text, flags=re.IGNORECASE | re.DOTALL)
+        caption = m.group(1).strip() if m else ""
+    # Try JSON-like tags array
+    tags = []
+    m = re.search(r'"tags"\s*:\s*(\[[^\]]*\])', text, flags=re.IGNORECASE | re.DOTALL)
+    if m:
+        try:
+            tags = json.loads(m.group(1))
+        except Exception:
+            tags = []
+    return caption, tags
+
+
 def extract_json(text: str):
     text = text.strip()
     try:
@@ -84,21 +104,51 @@ def extract_json(text: str):
         try:
             return json.loads(text[start : end + 1])
         except json.JSONDecodeError:
-            return None
+            pass
+    caption, tags = _extract_caption_tags_from_raw(text)
+    if caption or tags:
+        return {"caption": caption, "tags": tags}
     return None
 
 
 def load_existing_records(path: Path):
     if not path.exists():
-        return [], {}
+        return [], set()
     try:
         data = json.loads(path.read_text())
         if not isinstance(data, list):
-            return [], {}
+            return [], set()
     except Exception:
-        return [], {}
-    index = {item.get("image_path"): item for item in data if isinstance(item, dict)}
-    return data, index
+        return [], set()
+    processed = set()
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        image_path = item.get("image_path")
+        if not image_path:
+            continue
+        processed.update(normalize_path(image_path))
+    return data, processed
+
+
+def normalize_path(path_value):
+    try:
+        path = Path(path_value)
+    except Exception:
+        return {str(path_value)}
+    normalized = {str(path)}
+    try:
+        normalized.add(str(path.resolve()))
+    except Exception:
+        pass
+    return normalized
+
+
+def is_processed(image_path: Path, processed_set: set):
+    for key in normalize_path(image_path):
+        if key in processed_set:
+            return True
+    return False
 
 
 def save_records(path: Path, records):
@@ -126,11 +176,11 @@ def caption_images(
     model.eval()
 
     global_records = []
-    global_index = {}
+    global_processed = set()
     folder_cache = {}
     if output_mode == "single":
         global_path = input_dir / output_name
-        global_records, global_index = load_existing_records(global_path)
+        global_records, global_processed = load_existing_records(global_path)
 
     tasks = []
     for doc_dir, images in iter_image_files(input_dir):
@@ -139,14 +189,14 @@ def caption_images(
 
         if output_mode == "per-folder":
             output_path = doc_dir / output_name
-            records, index = load_existing_records(output_path)
-            folder_cache[doc_dir] = (output_path, records, index)
+            records, processed = load_existing_records(output_path)
+            folder_cache[doc_dir] = (output_path, records, processed)
         else:
             output_path = input_dir / output_name
-            records, index = global_records, global_index
+            records, processed = global_records, global_processed
 
         for image_path in images:
-            if str(image_path) in index:
+            if is_processed(image_path, processed):
                 continue
             tasks.append((doc_dir, image_path))
 
@@ -155,9 +205,9 @@ def caption_images(
 
     for doc_dir, image_path in tqdm(tasks, desc="Captioning images"):
         if output_mode == "per-folder":
-            output_path, records, index = folder_cache[doc_dir]
+            output_path, records, processed = folder_cache[doc_dir]
         else:
-            output_path, records, index = input_dir / output_name, global_records, global_index
+            output_path, records, processed = input_dir / output_name, global_records, global_processed
 
         inputs = build_qwen_caption_inputs(processor, image_path)
         inputs = inputs.to(device)
@@ -185,7 +235,7 @@ def caption_images(
             "created_at": time.strftime("%Y-%m-%d %H:%M:%S"),
         }
         records.append(record)
-        index[str(image_path)] = record
+        processed.update(normalize_path(image_path))
         save_records(output_path, records)
 
     if output_mode == "single":

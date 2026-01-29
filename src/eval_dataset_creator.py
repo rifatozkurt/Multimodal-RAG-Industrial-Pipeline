@@ -1,36 +1,3 @@
-
-"""
-Simple PDF QA annotation tool for multimodal RAG datasets.
-
-Features
---------
-- Input a directory path containing PDFs.
-- Input a directory path containing extracted images.
-- Dropdown with all detected PDFs.
-- Page slider + preview:
-    * Renders PDF page as an image (via PyMuPDF).
-    * Shows extracted page text.
-- Image gallery + checkbox selection for ground-truth images on the selected page.
-- Question authoring:
-    * Question text
-    * Ground-truth answer
-    * Question type:
-        - free_form
-        - multiple_choice
-        - truth_table
-        - fill_in_the_blanks
-    * Auto-generated JSON templates for structured types.
-- Saves annotations to a JSON file as a list of entries.
-
-Dependencies
-------------
-pip install gradio pymupdf pillow
-
-Run
----
-python pdf_qa_annotator.py
-"""
-
 import os
 import json
 import time
@@ -41,9 +8,6 @@ import fitz  # PyMuPDF
 from PIL import Image
 
 
-# ----------------------------
-# Utility functions
-# ----------------------------
 
 def list_pdfs_in_directory(pdf_dir: str) -> Dict[str, str]:
     """Return a mapping {pdf_name: full_path} for all PDFs in directory."""

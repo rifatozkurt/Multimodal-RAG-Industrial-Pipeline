@@ -1,0 +1,31 @@
+Dataset: eval/datasets/dataset_mcq_fib.json
+Predictions: /rifat/Multimodal-RAG-Industrial-Pipeline/eval/runs/vlm_caption/20260128_174958/predictions.jsonl
+Missing predictions: 0
+
+Metric definitions:
+- nli_answer_*: entailment score with premise = retrieved text chunk, hypothesis = generated answer (open-ended only)
+- nli_query_*: entailment score with premise = retrieved text chunk, hypothesis = original query (all questions)
+
+Counts:
+- fill_count: 40
+- image_retrieval_count: 140
+- mcq_count: 60
+- nli_count: 140
+- open_count: 40
+
+Metrics:
+- fill_exact_match: 0.475
+- fill_token_f1: 0.5
+- image_hit_at_1: 0.2
+- image_hit_at_3: 0.4
+- image_hit_at_5: 0.4
+- image_mrr: 0.2821428571428571
+- mcq_accuracy: 0.8166666666666667
+- mcq_parse_fail: 0.0
+- nli_answer_max: 0.3511610325615038
+- nli_answer_mean: 0.15757556088556154
+- nli_query_max: 0.03475415909072451
+- nli_query_mean: 0.01568640300926442
+- rouge1_f1: 0.5677695579796536
+- rouge2_f1: 0.33409798855366
+- rougeL_f1: 0.4628848825958457

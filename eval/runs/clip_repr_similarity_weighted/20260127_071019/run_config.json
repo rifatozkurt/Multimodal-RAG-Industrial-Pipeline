@@ -1,0 +1,22 @@
+{
+  "dataset": "/rifat/Multimodal-RAG-Industrial-Pipeline/eval/datasets/dataset_mcq_fib.json",
+  "run_dir": "eval/runs/clip_repr_similarity_weighted/20260127_071019",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "backend": "qwen_vl",
+  "device": "cuda:0",
+  "preprocess_type": null,
+  "summarize": false,
+  "image_query_captioning": true,
+  "image_retrieval_mode": "clip_repr",
+  "filtered_image_retrieval": true,
+  "merge_type": "similarity_weighted",
+  "topk_text": 3,
+  "topk_image": 3,
+  "max_images": 3,
+  "match_threshold_text": -0.5,
+  "match_threshold_image": -0.6,
+  "max_new_tokens": 64,
+  "limit": null,
+  "shard_id": 0,
+  "num_shards": 1
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/clip/20260127_070701/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.07857142857142857,
+      "image_hit_at_3": 0.14285714285714285,
+      "image_hit_at_5": 0.14285714285714285,
+      "image_mrr": 0.10357142857142856,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "clip",
+    "merge_type": null
+  },
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/page_text/20260127_070712/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.29285714285714287,
+      "image_hit_at_3": 0.42857142857142855,
+      "image_hit_at_5": 0.42857142857142855,
+      "image_mrr": 0.3535714285714286,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "page_text",
+    "merge_type": null
+  },
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/vlm_caption/20260127_070719/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.4,
+      "image_hit_at_3": 0.6214285714285714,
+      "image_hit_at_5": 0.6214285714285714,
+      "image_mrr": 0.49285714285714277,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "vlm_caption",
+    "merge_type": null
+  },
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/clip_repr_normalized_mean/20260127_070725/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.12857142857142856,
+      "image_hit_at_3": 0.25,
+      "image_hit_at_5": 0.25,
+      "image_mrr": 0.17857142857142855,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "clip_repr_normalized_mean",
+    "merge_type": "normalized_mean"
+  },
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/clip_repr_similarity_weighted/20260127_070737/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.1357142857142857,
+      "image_hit_at_3": 0.2357142857142857,
+      "image_hit_at_5": 0.2357142857142857,
+      "image_mrr": 0.175,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "clip_repr_similarity_weighted",
+    "merge_type": "similarity_weighted"
+  },
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/clip_repr_query_interpolation/20260127_070749/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.12142857142857143,
+      "image_hit_at_3": 0.3,
+      "image_hit_at_5": 0.3,
+      "image_mrr": 0.1976190476190476,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "clip_repr_query_interpolation",
+    "merge_type": "query_interpolation"
+  },
+  {
+    "dataset": "./eval/datasets/dataset_mcq_fib.json",
+    "predictions": "eval/runs_retrieval/clip_repr_pca/20260127_070801/per_item.jsonl",
+    "missing_predictions": 0,
+    "counts": {
+      "image_retrieval_count": 140,
+      "nli_count": 140
+    },
+    "metrics": {
+      "image_hit_at_1": 0.05714285714285714,
+      "image_hit_at_3": 0.1,
+      "image_hit_at_5": 0.1,
+      "image_mrr": 0.075,
+      "nli_query_max": 0.03475415909072451,
+      "nli_query_mean": 0.01568640300926442
+    },
+    "retriever": "clip_repr_pca",
+    "merge_type": "pca"
+  }
+]

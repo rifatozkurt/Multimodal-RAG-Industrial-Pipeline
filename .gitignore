@@ -18,10 +18,13 @@ wheels/
 # generated data
 documents/outputs/
 documents/pdfs/
-documents/extraxted_files.txt
-eval/datasets/dataset_old.json
+documents/clip_token_logs/
+documents/extracted_files.txt
 eval/datasets/dataset_old2.json
-
+eval/datasets/dataset_old.json
+eval/runs/Qwen_Qwen3-VL-8B-Instruct_multimodal_rag_results.csv
+eval/runs/Qwen_Qwen3-VL-8B-Instruct_summary_metrics.json
+eval/runs/print.txt
 
 # Miscellaneous
 src/scratchpad.ipynb

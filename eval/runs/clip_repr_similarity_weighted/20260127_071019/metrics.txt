@@ -1,0 +1,31 @@
+Dataset: eval/datasets/dataset_mcq_fib.json
+Predictions: eval/runs/clip_repr_similarity_weighted/20260127_071019/predictions.jsonl
+Missing predictions: 0
+
+Metric definitions:
+- nli_answer_*: entailment score with premise = retrieved text chunk, hypothesis = generated answer (open-ended only)
+- nli_query_*: entailment score with premise = retrieved text chunk, hypothesis = original query (all questions)
+
+Counts:
+- fill_count: 40
+- image_retrieval_count: 140
+- mcq_count: 60
+- nli_count: 140
+- open_count: 40
+
+Metrics:
+- fill_exact_match: 0.45
+- fill_token_f1: 0.475
+- image_hit_at_1: 0.1
+- image_hit_at_3: 0.20714285714285716
+- image_hit_at_5: 0.20714285714285716
+- image_mrr: 0.14285714285714288
+- mcq_accuracy: 0.7333333333333333
+- mcq_parse_fail: 0.0
+- nli_answer_max: 0.34218550017103555
+- nli_answer_mean: 0.14454238832040578
+- nli_query_max: 0.034755983398645184
+- nli_query_mean: 0.015688372540032667
+- rouge1_f1: 0.5463044849355397
+- rouge2_f1: 0.2993480640095659
+- rougeL_f1: 0.4401625726252997

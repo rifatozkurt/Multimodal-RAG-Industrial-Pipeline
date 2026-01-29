@@ -1,0 +1,19 @@
+{
+  "dataset": "./eval/datasets/dataset_mcq_fib.json",
+  "predictions": "eval/runs_retrieval/clip_repr_pca/20260127_070801/per_item.jsonl",
+  "missing_predictions": 0,
+  "counts": {
+    "image_retrieval_count": 140,
+    "nli_count": 140
+  },
+  "metrics": {
+    "image_hit_at_1": 0.05714285714285714,
+    "image_hit_at_3": 0.1,
+    "image_hit_at_5": 0.1,
+    "image_mrr": 0.075,
+    "nli_query_max": 0.03475415909072451,
+    "nli_query_mean": 0.01568640300926442
+  },
+  "retriever": "clip_repr_pca",
+  "merge_type": "pca"
+}
