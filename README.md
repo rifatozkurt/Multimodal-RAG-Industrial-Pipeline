@@ -1,67 +1,155 @@
-# Multimodal RAG Pipeline (industrial prototype)
+# Multimodal RAG for Industrial Manuals
 
-Lightweight retrieval-augmented-generation (RAG) pipeline for multimodal documents (text + images).  
-Intended for industrial use-cases such as retrieving design documents, manuals, and technical drawings with combined vision and text models. Work in progress.
+This repository implements a multimodal RAG pipeline for technical PDFs (text + images), with:
+- PDF/layout extraction and vector indexing
+- Multiple image-retrieval strategies (CLIP, page text, VLM captions, CLIP-representation merge)
+- Qwen3-VL or LLaVA generation backends
+- Evaluation tooling for QA and retrieval metrics
 
-## Highlights
-- Extracts text and images from PDFs and other text files.
-- Chunks, embeds, and stores vectors in a persistent Chroma DB.
-- Retriever + LLM RAG wrapper supporting query expansion / chain-of-thought preprocessing.
-- Prototype code lives in a separate scratchpad; the production pipeline is in the main pipeline file.
+## What Is In This Repo
 
-## Key files
-- Pipeline (main): [src/RAG_pipeline.ipynb](src/RAG_pipeline.ipynb)  
-  - Important components implemented in the pipeline:
-    - [`PdfImagesLoader`](src/RAG_pipeline.ipynb) — embedded-image & page rendering loader
-    - [`EmbeddingManager`](src/RAG_pipeline.ipynb) — sentence-transformer embedding wrapper
-    - [`VectorDBManager`](src/RAG_pipeline.ipynb) — chroma DB persistent client and collection manager
-    - [`Retriever`](src/RAG_pipeline.ipynb) — vector-space retriever using stored embeddings
-    - [`SimpleRAG`](src/RAG_pipeline.ipynb) — minimal retrieval → LLM flow
-    - [`AdvancedRAG`](src/RAG_pipeline.ipynb) — expanded pipeline with query preprocessing and summarization
+### Main source files
+- `src/add_documents_extractor.py`: Main ingestion/indexing pipeline (text chunks + layout image crops + optional VLM captions + CLIP text representations).
+- `src/multimodal_rag.py`: Script entrypoint for one-shot multimodal RAG querying.
+- `src/chat_interface.py`: Gradio chat UI with model preloading and optional user-uploaded image prioritization.
+- `src/image_captioner.py`: Generates retrieval-oriented captions/tags for extracted images (`vlm_captions.json`).
+- `src/eval_dataset_creator.py`: Gradio annotation app to build QA datasets from PDFs.
 
-- Persistent vector DB (example): [documents/vectorDB/pdf_db/chroma.sqlite3](documents/vectorDB/pdf_db/chroma.sqlite3)
-- Documents folder: [documents/](documents/) — source PDFs, extracted images, and text
+### Core modules (`src/core`)
+- `config.py`: Global paths, embedding models, eval defaults.
+- `data_loaders.py`: PDF extraction loaders (`PdfExtractionLoader`, `PdfImagesLoader`) + chunking.
+- `embedders.py`: Text/image embedding managers (`SentenceTransformer`, CLIP).
+- `vectordb.py`: Chroma persistent collection wrapper.
+- `retrievers.py`: Text and multimodal retrievers, including experimental variants.
+- `rag_pipelines.py`: `SimpleRAG`, `AdvancedRAG`, and `AdvancedMultimodalRAG` orchestration.
+- `models_llm.py`: Prompt templates and model-loading helpers (Groq, Qwen3-VL, LLaVA).
 
-## Quickstart (local)
-1. Use Python 3.12 (see `.python-version`).
-2. Create and activate virtualenv:
-   - Unix: python -m venv .venv && source .venv/bin/activate
-   - Windows: python -m venv .venv && .venv\Scripts\activate
-3. Install deps:
-   ```sh
-   pip install -r requirements.txt
-   or
-   pip install -r requirements.lock
-   or
-   uv sync
-   ```
-4. Set secrets (example `.env`):
-   - GROQ_API_KEY for Groq-hosted LLMs (if used).
-   - You can get and use a Groq API for free (limits apply)
-5. Open and run the notebook cells in order: [src/RAG_pipeline.ipynb](src/RAG_pipeline.ipynb). The notebook runs the end-to-end flow:
-   - load documents
-   - extract images/pages (via `PdfImagesLoader`)
-   - chunk documents
-   - compute embeddings (`EmbeddingManager`)
-   - persist to Chroma (`VectorDBManager`)
-   - query via `Retriever` and generate answers with `SimpleRAG` / `AdvancedRAG`
+### Evaluation (`eval/metrics`)
+- `run_eval.py`: End-to-end QA eval (predict + log per run).
+- `score_eval.py`: Scores predictions (MCQ/FIB/open, ROUGE, image retrieval, optional NLI).
+- `retrieval_eval.py`: Retrieval-only benchmarking across retriever modes.
+- `summarize_runs.py`: Aggregates `metrics.json` files into `summary.json` and `summary.csv`.
+- `view_eval.py`: Gradio viewer for run inspection.
+- `experiments.py`: Multi-GPU experiment launcher.
 
-## Usage Notes
-- The notebook is designed to be run cell-by-cell. For production integration, port the classes (`EmbeddingManager`, `VectorDBManager`, `Retriever`, `AdvancedRAG`, etc.) into a standalone Python module.
-- `src/scratchpad.ipynb` is for experiments and quick tests only; it contains ad-hoc code and examples — do not rely on it for the canonical pipeline.
-- Vector DB path is under `documents/vectorDB/` by default.
+### Data/artifacts folders
+- `documents/`: Input docs and vector DBs.
+  - Expected ingestion input is `documents/pdfs/*.pdf`.
+  - Chroma stores under `documents/vectorDB/*`.
+- `eval/datasets/`: QA dataset JSONs.
+- `eval/runs/` and `eval/runs_retrieval/`: Saved eval outputs.
 
-## Configuration
-- Paths and chunking are set near the top of [src/RAG_pipeline.ipynb](src/RAG_pipeline.ipynb):
-  - `documents_path`, `vectordb_path`, `chunking_size`, `chunking_step`, `embedding_model_name`
-- Adjust `EmbeddingManager` model name to change embedding size / model.
+## Setup
 
-## Extending the pipeline
-- Swap embedding models by changing `EmbeddingManager` model_name.
-- Plug different LLMs by replacing the `ChatGroq` instances in the notebook with other LLM clients.
-- Move notebook classes into a package for reuse in a service or API.
+### 1) Python environment
+- Recommended: Python 3.11+ (project metadata uses `>=3.11`).
+- Install dependencies with one of:
 
-## Troubleshooting
-- Ensure `chromadb` persistent path is writable.
-- If PDF image extraction fails for specific files, check `PdfImagesLoader` logs and the PyMuPDF version.
-- Llava model implementation is incomplete at the moment, therefore can be ignored
+```bash
+pip install -r requirements.txt
+```
+
+or
+
+```bash
+uv sync
+```
+
+### 2) Environment variables
+Create `.env` with keys you need:
+- `GROQ_API_KEY` (query expansion/summarization + text LLM support)
+- `OPENAI_API_KEY` / `HUGGINGFACE_API_KEY` only if your setup requires them
+
+Do not commit real API keys.
+
+## End-to-End Workflow
+
+### 1) Prepare documents
+- Put PDFs in: `documents/pdfs/`
+- If using layout-based extraction, provide layout files under: `documents/outputs/<pdf_stem>/layout_results.json`
+
+### 2) (Optional) Generate image captions for caption-based retrieval
+```bash
+python src/image_captioner.py --output_mode single
+```
+This writes `documents/pdfs/extracted_images/vlm_captions.json`.
+
+### 3) Build/update vector databases
+```bash
+python src/add_documents_extractor.py
+```
+This script populates:
+- `pdf_db` (text chunks)
+- `pdf_image_db` (image regions)
+- `pdf_image_page_texts_db` (text near image regions)
+- `pdf_text_clip_db` (CLIP text embeddings)
+- `pdf_image_vlm_captions_db` (caption embeddings)
+
+### 4) Run a query
+CLI:
+```bash
+python src/multimodal_rag.py
+```
+
+UI:
+```bash
+python src/chat_interface.py
+```
+Then load a backend model in the UI before sending prompts.
+
+## Retrieval Modes
+
+Supported by eval/runtime code:
+- `clip`: CLIP text->image retrieval
+- `page_text`: retrieve image context by text-only embeddings over page text near images
+- `vlm_caption`: retrieve images via generated caption embeddings
+- `clip_repr`: retrieve via merged CLIP text-representation strategies:
+  - `normalized_mean`
+  - `similarity_weighted`
+  - `query_interpolation`
+  - `pca`
+
+## Evaluation
+
+### Run full QA eval
+```bash
+python eval/metrics/run_eval.py \
+  --dataset eval/datasets/dataset_mcq_fib.json \
+  --run_dir eval/runs/vlm_caption \
+  --model Qwen/Qwen3-VL-8B-Instruct \
+  --image_retrieval_mode vlm_caption \
+  --filtered_image_retrieval \
+  --topk_text 3 --topk_image 3 --max_images 3
+```
+
+### Score an existing predictions file
+```bash
+python eval/metrics/score_eval.py \
+  --dataset eval/datasets/dataset_mcq_fib.json \
+  --predictions eval/runs/<run_name>/<timestamp>/predictions.jsonl
+```
+
+### Aggregate all runs into summaries
+```bash
+python eval/metrics/summarize_runs.py --run_root eval/runs
+python eval/metrics/summarize_runs.py --run_root eval/runs_retrieval
+```
+
+### Retrieval-only benchmark
+```bash
+python eval/metrics/retrieval_eval.py --dataset eval/datasets/dataset_mcq_fib.json
+```
+
+### Inspect runs in a UI
+```bash
+python eval/metrics/view_eval.py
+```
+
+## Notebook/Utility Files
+- `src/RAG_pipeline.ipynb` and `src/multimodalRAG.ipynb`: exploratory notebook versions of the pipeline.
+- `test.ipynb`: environment/GPU sanity checks.
+- `my_env_now.yml`: large conda environment snapshot.
+
+## Notes
+- Repository contains persisted Chroma artifacts and historical eval outputs for reproducibility.
+- `pyproject.toml` dependency list is minimal; `requirements.txt` is the practical environment definition for this project.
